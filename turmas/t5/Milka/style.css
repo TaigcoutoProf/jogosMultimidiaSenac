@@ -14,7 +14,7 @@ input[type="file"] {
 	color: black;
 }
 
-/* for scaling checkboxes according to the font size */
+/* for scaling checkboxes according to the font sizes  */
 .c3-auto-size-checkbox {
 	font-size: 1em;
 	width: 1em;
