@@ -1,0 +1,250 @@
+{
+	"name": "VariaveisGlobais",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Pause"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "MonstroComportamento"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Player"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Tempo"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Vida&GameOver"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Caixa"
+		},
+		{
+			"eventType": "variable",
+			"name": "Moeda",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 951427590014915
+		},
+		{
+			"eventType": "variable",
+			"name": "Pontos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 771318689924600
+		},
+		{
+			"eventType": "variable",
+			"name": "barra_hp",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 232784763454599
+		},
+		{
+			"eventType": "variable",
+			"name": "tempo",
+			"type": "number",
+			"initialValue": "300",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 102757067253126
+		},
+		{
+			"eventType": "variable",
+			"name": "Pause",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 512147400454530
+		},
+		{
+			"eventType": "variable",
+			"name": "Barreiras",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 116554407957862
+		},
+		{
+			"eventType": "variable",
+			"name": "Bombas",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 393934891521926
+		},
+		{
+			"eventType": "variable",
+			"name": "Botoes",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 997198141949350
+		},
+		{
+			"eventType": "variable",
+			"name": "PowerUp",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 208139827581848
+		},
+		{
+			"eventType": "variable",
+			"name": "Torretas",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 876063935340468
+		},
+		{
+			"eventType": "variable",
+			"name": "TurnoDoBoss",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 362916493994167
+		},
+		{
+			"eventType": "variable",
+			"name": "BossHP",
+			"type": "number",
+			"initialValue": "6",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 838231431561440
+		},
+		{
+			"eventType": "variable",
+			"name": "invencibilidade",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 422578851386309
+		},
+		{
+			"eventType": "variable",
+			"name": "hitbox",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 865670193026067
+		},
+		{
+			"eventType": "variable",
+			"name": "vida_extra",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 669453278727332
+		},
+		{
+			"eventType": "variable",
+			"name": "Contador_moeda_vida",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 546485874373700
+		},
+		{
+			"eventType": "variable",
+			"name": "contador_vida",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 177163360466517
+		},
+		{
+			"eventType": "variable",
+			"name": "contador_barra_vida",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 839072333992618
+		},
+		{
+			"eventType": "variable",
+			"name": "barra_hp_l",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 630781889066393
+		},
+		{
+			"eventType": "variable",
+			"name": "mudanca_fase",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 124198973965880
+		},
+		{
+			"eventType": "variable",
+			"name": "game_over",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 406125776659959
+		},
+		{
+			"eventType": "variable",
+			"name": "paused",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 748280743914666
+		}
+	],
+	"sid": 359893336911902
+}

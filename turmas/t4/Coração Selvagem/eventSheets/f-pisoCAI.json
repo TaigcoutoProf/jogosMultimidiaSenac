@@ -1,0 +1,365 @@
+{
+	"name": "f-pisoCAI",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "contato inicial",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "Player",
+							"sid": 723060070304667,
+							"parameters": {
+								"object": "plataforma",
+								"offset-x": "0",
+								"offset-y": "4"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "plataforma",
+							"sid": 329554773898473,
+							"parameters": {
+								"instance-variable": "ativa"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "plataforma",
+							"sid": 614469673661485,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "plataforma",
+							"sid": 628884095870646,
+							"parameters": {
+								"instance-variable": "ativa",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "plataforma",
+							"sid": 946091984624818,
+							"parameters": {
+								"instance-variable": "tempo_ativo",
+								"value": "0.4"
+							}
+						}
+					],
+					"sid": 815803114909197
+				}
+			],
+			"sid": 480702432145660
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "fazer a plaforma abaixar",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "plataforma",
+							"sid": 825777432861926,
+							"parameters": {
+								"instance-variable": "ativa"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "plataforma",
+							"sid": 667436832395987,
+							"parameters": {
+								"instance-variable": "ativar_retorno"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "plataforma",
+							"sid": 595628969787561,
+							"parameters": {
+								"instance-variable": "tempo_ativo",
+								"comparison": 4,
+								"value": "0"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 201928525193190,
+							"parameters": {
+								"interval-seconds": "dt"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "plataforma",
+							"sid": 511145421368226,
+							"parameters": {
+								"instance-variable": "tempo_ativo",
+								"value": "dt"
+							}
+						}
+					],
+					"sid": 986007536784504,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "plataforma",
+									"sid": 975669240003155,
+									"parameters": {
+										"instance-variable": "tempo_ativo",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "plataforma",
+									"sid": 487113718781051,
+									"parameters": {
+										"instance-variable": "ativa",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "plataforma",
+									"sid": 102215818286729,
+									"parameters": {
+										"instance-variable": "tempo_d_retorno",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "plataforma",
+									"sid": 763760080307201,
+									"parameters": {
+										"instance-variable": "ativar_retorno",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "plataforma",
+									"sid": 222422394343466,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "FolhaQuebrante",
+									"sid": 932363661918288,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 894642608654658
+						}
+					]
+				}
+			],
+			"sid": 975303899893766
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "plataforma volta ao normal",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "plataforma",
+							"sid": 751588956979454,
+							"parameters": {
+								"instance-variable": "ativa"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "plataforma",
+							"sid": 937083950814235,
+							"parameters": {
+								"instance-variable": "ativar_retorno"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "plataforma",
+							"sid": 884823306511056,
+							"parameters": {
+								"instance-variable": "tempo_d_retorno",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "plataforma",
+							"sid": 309027455127149,
+							"parameters": {
+								"instance-variable": "tempo_d_retorno",
+								"value": "dt"
+							}
+						}
+					],
+					"sid": 398973233829593,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "plataforma",
+									"sid": 917272038547870,
+									"parameters": {
+										"instance-variable": "tempo_d_retorno",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "plataforma",
+									"sid": 381179774673812,
+									"parameters": {
+										"instance-variable": "ativa",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "plataforma",
+									"sid": 824249025792058,
+									"parameters": {
+										"instance-variable": "ativar_retorno",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "plataforma",
+									"sid": 711530425260164,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "FolhaQuebrante",
+									"sid": 335481063076205,
+									"parameters": {
+										"frame-number": "0"
+									}
+								}
+							],
+							"sid": 227206827412112
+						}
+					]
+				}
+			],
+			"sid": 974830159598511
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "colisoes",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "plataforma",
+							"sid": 568927449948173,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "plataforma",
+							"sid": 848140113480901,
+							"behaviorType": "Sólido",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 478638478685453
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "plataforma",
+							"sid": 272849046633913,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "plataforma",
+							"sid": 307805160153004,
+							"behaviorType": "Sólido",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 302524748124387
+				}
+			],
+			"sid": 524810684253303
+		}
+	],
+	"sid": 521790171967377
+}

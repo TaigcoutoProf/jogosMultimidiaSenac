@@ -1,0 +1,114 @@
+{
+	"name": "parabens",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 376092101089675
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "botao_reiniciar_parabens",
+					"sid": 783369735910145
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Contagem_pontos",
+					"sid": 240379220910604,
+					"parameters": {
+						"text": "Pontos"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 423130380850235,
+					"parameters": {
+						"audio-file": "aplausos",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"aplausos\""
+					}
+				}
+			],
+			"sid": 418475246788222
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 401800738568844,
+					"parameters": {
+						"object": "botao_reiniciar_parabens"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "botao_reiniciar_parabens",
+					"sid": 564477162331768,
+					"parameters": {
+						"animation": "\"Animação 3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 496030089514549,
+					"parameters": {
+						"audio-file": "botao",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Áudio",
+					"sid": 963733552366869,
+					"parameters": {
+						"tag": "\"aplausos\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 113238720176286,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 532334421926626,
+					"parameters": {
+						"reset-static": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 410787340371170,
+					"parameters": {
+						"layout": "start"
+					}
+				}
+			],
+			"sid": 604516589654439
+		}
+	],
+	"sid": 933878866742405
+}

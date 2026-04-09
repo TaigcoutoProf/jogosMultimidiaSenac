@@ -1,0 +1,515 @@
+{
+	"name": "f-bliblioteca",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "f-player"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "fala bibliotecario",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 111082832878875,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 812910843927878,
+							"parameters": {
+								"object": "falabibli"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "bibliotexto",
+							"sid": 166998198189256,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "bibliotexto",
+							"sid": 914477923016905,
+							"parameters": {
+								"text": "\"Ah olá Arius, meu garoto. \nSinto muito por sua perda, sua mãe era uma mulher incrível. \"",
+								"duration": "4.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 156291364367101,
+							"parameters": {
+								"seconds": "7.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bibliotexto",
+							"sid": 300646832521394,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 467570437523781,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bibliotexto2",
+							"sid": 807870686933103,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "bibliotexto2",
+							"sid": 222540943714849,
+							"parameters": {
+								"text": "\" Algo está matando a árvore e sua mãe estava tentando descobrir o que era! \nSua mãe vinha direto aqui atrás do livro corrompido, ele ainda tem algumas anotações dela. \"",
+								"duration": "4.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 106032030425440,
+							"parameters": {
+								"seconds": "9.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bibliotexto2",
+							"sid": 887477618120147,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 922534776437696,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bibliotexto3",
+							"sid": 143675063474402,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "bibliotexto3",
+							"sid": 896440326711703,
+							"parameters": {
+								"text": "\" Não sei aonde ele está ao certo, mas ele dará as repostas que precisamos.\nTome cuidado criança...  a árvore não é mais a mesma! \nE lembre-se, sua mãe sempre terá muito orgulho de você!\"",
+								"duration": "4.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 915913040206673,
+							"parameters": {
+								"seconds": "9.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bibliotexto3",
+							"sid": 307162926672365,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 227469548487857
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 892172520865299,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 378017003017073,
+							"parameters": {
+								"object": "falabibli"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite4",
+							"sid": 807613307070876,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 833499148488345,
+							"parameters": {
+								"seconds": "26",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite4",
+							"sid": 189297609546995,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 736829690667354
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 852690351118287,
+							"parameters": {
+								"key": 13
+							}
+						},
+						{
+							"id": "is-running-typewriter-text",
+							"objectClass": "bibliotexto",
+							"sid": 646792899755832
+						}
+					],
+					"actions": [
+						{
+							"id": "typewriter-finish",
+							"objectClass": "bibliotexto",
+							"sid": 376541493006015
+						}
+					],
+					"sid": 137631452714697
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 219597914813169,
+							"parameters": {
+								"key": 13
+							}
+						},
+						{
+							"id": "is-running-typewriter-text",
+							"objectClass": "bibliotexto2",
+							"sid": 173912191235171
+						}
+					],
+					"actions": [
+						{
+							"id": "typewriter-finish",
+							"objectClass": "bibliotexto2",
+							"sid": 602658291712997
+						}
+					],
+					"sid": 319577002640865
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 187280866797614,
+							"parameters": {
+								"key": 13
+							}
+						},
+						{
+							"id": "is-running-typewriter-text",
+							"objectClass": "bibliotexto3",
+							"sid": 189830300706249
+						}
+					],
+					"actions": [
+						{
+							"id": "typewriter-finish",
+							"objectClass": "bibliotexto3",
+							"sid": 576948365669270
+						}
+					],
+					"sid": 979327543984885
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 861033884496810,
+							"parameters": {
+								"object": "falabibli"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "ebibli",
+							"sid": 718418184222420,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 368080338431085
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 883095264725560,
+							"parameters": {
+								"object": "falabibli"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "ebibli",
+							"sid": 566051110274930,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 230735783616361
+				}
+			],
+			"sid": 669495950203187
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "entrada e saida",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 685147414874257,
+							"parameters": {
+								"object": "entrada"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "entrad",
+							"sid": 251163261361460,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 290869093762835,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 242799805271570,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 549515950951553,
+							"parameters": {
+								"object": "entrada"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 548627550877118,
+							"parameters": {
+								"layout": "rua_1"
+							}
+						}
+					],
+					"sid": 708162763507339,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 601484539169578,
+							"parameters": {
+								"object": "entrada"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "entrad",
+							"sid": 622986077239603,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 271314069288850,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 574763896546286,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 808022559690850,
+							"parameters": {
+								"object": "saida"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 498064225504728,
+							"parameters": {
+								"layout": "rua_2"
+							}
+						}
+					],
+					"sid": 724984102456384
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 962506573383485,
+							"parameters": {
+								"object": "saida"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "esaida",
+							"sid": 727491239649848,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 578705187179549
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 510548373926203,
+							"parameters": {
+								"object": "saida"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "esaida",
+							"sid": 707025235497709,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 888638371072886
+				}
+			],
+			"sid": 764645191914851
+		}
+	],
+	"sid": 289142227131697
+}

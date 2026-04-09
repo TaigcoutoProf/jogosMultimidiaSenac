@@ -1,0 +1,56 @@
+{
+	"name": "diario_inv",
+	"plugin-id": "Sprite",
+	"sid": 311262391411055,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 84,
+						"height": 80,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5145818,
+						"collisionPoly": {
+							"points": [
+								0.04931972789115646,
+								0.0017857142857142857,
+								0.7976190476190477,
+								0,
+								0.9404761904761905,
+								0.1,
+								0.8928571428571429,
+								0.875,
+								0.7976190476190477,
+								1,
+								0.052721088435374146,
+								0.9982142857142855
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 406835160704926,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

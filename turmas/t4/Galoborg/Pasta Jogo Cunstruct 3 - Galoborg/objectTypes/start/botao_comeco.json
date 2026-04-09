@@ -1,0 +1,173 @@
+{
+	"name": "botao_comeco",
+	"plugin-id": "Sprite",
+	"sid": 397315197288768,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 137,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7992275,
+						"collisionPoly": {
+							"points": [
+								0.029197080291970802,
+								0,
+								0.9635036496350365,
+								0,
+								1,
+								0.20833333333333334,
+								1,
+								0.75,
+								0.9562043795620438,
+								1,
+								0.029197080291970802,
+								1,
+								0,
+								0.7916666666666666,
+								0,
+								0.16666666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 837225861148024,
+				"name": "idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 137,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8379589,
+						"collisionPoly": {
+							"points": [
+								0.029197080291970802,
+								0,
+								0.9635036496350365,
+								0,
+								1,
+								0.20833333333333334,
+								1,
+								0.75,
+								0.9562043795620438,
+								1,
+								0.029197080291970802,
+								1,
+								0,
+								0.7916666666666666,
+								0,
+								0.16666666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 137,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6886947,
+						"collisionPoly": {
+							"points": [
+								0.029197080291970802,
+								0,
+								0.9635036496350365,
+								0,
+								1,
+								0.20833333333333334,
+								1,
+								0.75,
+								0.9562043795620438,
+								1,
+								0.029197080291970802,
+								1,
+								0,
+								0.7916666666666666,
+								0,
+								0.16666666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 137,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6258734,
+						"collisionPoly": {
+							"points": [
+								0.029197080291970802,
+								0,
+								0.9635036496350365,
+								0,
+								1,
+								0.20833333333333334,
+								1,
+								0.75,
+								0.9562043795620438,
+								1,
+								0.029197080291970802,
+								1,
+								0,
+								0.7916666666666666,
+								0,
+								0.16666666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 723872718302369,
+				"name": "comeco",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

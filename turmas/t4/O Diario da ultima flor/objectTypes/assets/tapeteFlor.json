@@ -1,0 +1,68 @@
+{
+	"name": "tapeteFlor",
+	"plugin-id": "Sprite",
+	"sid": 485053677329456,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 54,
+						"height": 27,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7229442,
+						"collisionPoly": {
+							"points": [
+								0.07407407407407407,
+								0,
+								0.8888888888888888,
+								0.037037037037037035,
+								0.9444444444444444,
+								0.07407407407407407,
+								0.9629629629629629,
+								0.1111111111111111,
+								1,
+								0.37037037037037035,
+								1,
+								0.5925925925925926,
+								0.9629629629629629,
+								0.8888888888888888,
+								0.9444444444444444,
+								0.9629629629629629,
+								0.8148148148148148,
+								1,
+								0.037037037037037035,
+								1,
+								0.018518518518518517,
+								0.9629629629629629,
+								0.037037037037037035,
+								0.1111111111111111
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 811129817005737,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

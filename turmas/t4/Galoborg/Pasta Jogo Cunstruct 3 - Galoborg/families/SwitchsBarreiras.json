@@ -1,0 +1,12 @@
+{
+	"name": "SwitchsBarreiras",
+	"plugin-id": "Sprite",
+	"sid": 966849977578924,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"SwitchBarreirasD",
+		"SwitchBarreirasE"
+	]
+}

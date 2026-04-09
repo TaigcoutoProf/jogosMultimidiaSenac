@@ -1,0 +1,83 @@
+{
+	"name": "Tempo",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Tempo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 497602857706851,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 625422453094423,
+							"parameters": {
+								"variable": "tempo",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Tempo",
+							"sid": 370716453712500,
+							"parameters": {
+								"text": "zeropad(floor(tempo/60%60),2) & \":\" & zeropad(floor(tempo%60),2)"
+							}
+						}
+					],
+					"sid": 593386515998586
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 138496509765392,
+							"parameters": {
+								"variable": "tempo",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 532084989107749,
+							"parameters": {
+								"layout": "game_over"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "barra_hp",
+							"sid": 407634578151305,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 983527890177020
+				}
+			],
+			"sid": 829946193693037
+		}
+	],
+	"sid": 459632302840085
+}

@@ -1,0 +1,481 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 44002,
+	"name": "Diario_da_ultima_flor1",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Áudio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Teclado",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Plano de Fundo em Blocos",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Mosaico",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Toque",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direções",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Persist",
+			"name": "Persistir",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Fixar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Interpolação",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Sólido",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "i2nbglqnybz",
+	"objectTypes": {
+		"items": [
+			"Mouse",
+			"Teclado",
+			"Toque",
+			"paredeInvisivel",
+			"bordaCama",
+			"bordacama_dir",
+			"bordacama_esq",
+			"borda_paredesolida",
+			"scenetrigger",
+			"quadroPopup",
+			"font_newgame",
+			"fon_credits",
+			"font_opções",
+			"capitulo1",
+			"Sprite10",
+			"Sprite2",
+			"sensor_porta",
+			"paredeBanheiro",
+			"paredes",
+			"Sprite18",
+			"Mosaico",
+			"Sprite",
+			"Mosaico2",
+			"Scenetrigger2",
+			"teleporte_creditos",
+			"modal_voltar_menu",
+			"botao_cancelar",
+			"botao_voltar_menu",
+			"latacookies",
+			"lataCookie",
+			"filmes",
+			"Sprite3",
+			"broche",
+			"Sprite5",
+			"Sprite4",
+			"textoBau",
+			"Texto",
+			"Sprite6",
+			"Sprite7",
+			"Sprite8",
+			"Sprite9",
+			"Sprite11",
+			"Sprite12",
+			"Sprite13",
+			"Áudio",
+			"Sprite14",
+			"Sprite16"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"cama",
+					"estante_livro",
+					"baú",
+					"luz",
+					"papeisParede",
+					"tapete",
+					"plantagrande",
+					"painelJanela",
+					"luzLetras",
+					"janela",
+					"escrivaninha",
+					"janela2",
+					"janela3",
+					"ralo",
+					"plantaflor",
+					"abajur",
+					"cadernoMesa",
+					"criadomudo",
+					"retrato",
+					"diplomaparede",
+					"janela1",
+					"personagem",
+					"porta",
+					"diario",
+					"chave_inv",
+					"diario_inv",
+					"LIVRO",
+					"hint01",
+					"hint02",
+					"tuto_icon",
+					"menu_button",
+					"tutorial",
+					"Fader",
+					"BookCloseUp",
+					"mesa",
+					"caixas",
+					"florPqna",
+					"livroschao",
+					"livrosMesa",
+					"malas",
+					"mesaVintage",
+					"poltronalado",
+					"pufe",
+					"tapeteFlor",
+					"escada"
+				],
+				"subfolders": [],
+				"name": "assets"
+			},
+			{
+				"items": [
+					"botão",
+					"cutbau",
+					"cutdiario",
+					"puzzle_diario",
+					"scroll_down",
+					"voltar_menu",
+					"cutdiariofundo",
+					"textodiario"
+				],
+				"subfolders": [],
+				"name": "cutscenes e botao"
+			},
+			{
+				"items": [
+					"textolia",
+					"balaoF",
+					"alerta_quarto"
+				],
+				"subfolders": [],
+				"name": "dialogo"
+			},
+			{
+				"items": [
+					"img_credits",
+					"img_menu"
+				],
+				"subfolders": [],
+				"name": "menus full image"
+			}
+		]
+	},
+	"functionsName": "Functions",
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Menu Principal",
+			"BaseJogo",
+			"cutsdiario",
+			"cutbau",
+			"object database",
+			"Intro",
+			"creditos",
+			"agradecimento"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"E_base jogo",
+			"dialogo",
+			"e_diario",
+			"e_bau",
+			"e_menu",
+			"e_intro",
+			"e_creditos",
+			"e_dialogo",
+			"e_agradecimento"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "Menuselecao2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 668367916744230,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "switch.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 324877050851001,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Thud.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 432049598651613,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "passos.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 242236331973963,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "lofi.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 698810937606081,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "musica menu.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 667574753445859,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 591056320622423,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 652245947743097,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 418227673456554,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 232130670564505,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 370583305558213,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 868115444330571,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 607546201244186,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Linha do tempo 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [
+			"Fluxograma 1"
+		],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"autoIncrementVersion": false,
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-integer-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "cover",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "default",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 854,
+	"viewportHeight": 480,
+	"firstLayout": null
+}

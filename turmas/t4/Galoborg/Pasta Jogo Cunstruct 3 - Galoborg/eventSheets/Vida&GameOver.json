@@ -1,0 +1,177 @@
+{
+	"name": "Vida&GameOver",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Vida",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 214536871630201
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-animation",
+							"objectClass": "barra_hp",
+							"sid": 428676250161031
+						}
+					],
+					"sid": 712331766719040
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 568891895290873,
+							"parameters": {
+								"variable": "barra_hp",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "barra_hp",
+							"sid": 409165339952835,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 980528926176157
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 410629742418108,
+							"parameters": {
+								"variable": "barra_hp",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "barra_hp",
+							"sid": 637411420669613,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 731497179713849
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 316751841215252,
+							"parameters": {
+								"variable": "barra_hp",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "barra_hp",
+							"sid": 341663285731413,
+							"parameters": {
+								"frame-number": "2"
+							}
+						}
+					],
+					"sid": 858591300266455
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 668984789264318,
+							"parameters": {
+								"variable": "barra_hp",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "barra_hp",
+							"sid": 691849195850424,
+							"parameters": {
+								"frame-number": "3"
+							}
+						}
+					],
+					"sid": 568021272813975,
+					"disabled": true
+				}
+			],
+			"sid": 459505456342627
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Toque",
+					"sid": 923426160988915,
+					"parameters": {
+						"object": "BotaoRecomeçar",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 827274516370670,
+					"parameters": {
+						"reset-static": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 722864208540933,
+					"parameters": {
+						"layout": "game_over"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 816496374498074
+				}
+			],
+			"sid": 301582408197433
+		}
+	],
+	"sid": 306570991737614
+}

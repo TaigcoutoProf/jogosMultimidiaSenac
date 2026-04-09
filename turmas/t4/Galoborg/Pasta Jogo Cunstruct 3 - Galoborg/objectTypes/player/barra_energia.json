@@ -1,0 +1,194 @@
+{
+	"name": "barra_energia",
+	"plugin-id": "Sprite",
+	"sid": 333969759833519,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 144,
+						"height": 20,
+						"originX": -0.16666666666666666,
+						"originY": -0.1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5812403,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.05,
+								0.9930555555555556,
+								0.1,
+								0.9861111111111112,
+								0.95,
+								0.3680555555555556,
+								1,
+								0.13194444444444445,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 144,
+						"height": 20,
+						"originX": -0.16666666666666666,
+						"originY": -0.1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 659221,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.05,
+								0.9930555555555556,
+								0.1,
+								0.9861111111111112,
+								0.95,
+								0.3680555555555556,
+								1,
+								0.13194444444444445,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 144,
+						"height": 20,
+						"originX": -0.16666666666666666,
+						"originY": -0.1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1626917,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.05,
+								0.9930555555555556,
+								0.1,
+								0.9861111111111112,
+								0.95,
+								0.3680555555555556,
+								1,
+								0.13194444444444445,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 144,
+						"height": 20,
+						"originX": -0.16666666666666666,
+						"originY": -0.1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6160331,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.05,
+								0.9930555555555556,
+								0.1,
+								0.9861111111111112,
+								0.95,
+								0.3680555555555556,
+								1,
+								0.13194444444444445,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 144,
+						"height": 20,
+						"originX": -0.16666666666666666,
+						"originY": -0.1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3016705,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.05,
+								0.9930555555555556,
+								0.1,
+								0.9861111111111112,
+								0.95,
+								0.3680555555555556,
+								1,
+								0.13194444444444445,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 144,
+						"height": 20,
+						"originX": -0.16666666666666666,
+						"originY": -0.1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4861641,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.05,
+								0.9930555555555556,
+								0.1,
+								0.9861111111111112,
+								0.95,
+								0.3680555555555556,
+								1,
+								0.13194444444444445,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 591086452349729,
+				"name": "energia",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,64 @@
+{
+	"name": "chave_inv",
+	"plugin-id": "Sprite",
+	"sid": 572305744662607,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 17,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4280753,
+						"collisionPoly": {
+							"points": [
+								0.6875,
+								0.058823529411764705,
+								0.875,
+								0.058823529411764705,
+								1,
+								0.29411764705882354,
+								1,
+								0.7058823529411765,
+								0.84375,
+								1,
+								0.71875,
+								1,
+								0.03125,
+								0.9411764705882353,
+								0,
+								0.8823529411764706,
+								0,
+								0.47058823529411764,
+								0.0625,
+								0.35294117647058826
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 161126005511339,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

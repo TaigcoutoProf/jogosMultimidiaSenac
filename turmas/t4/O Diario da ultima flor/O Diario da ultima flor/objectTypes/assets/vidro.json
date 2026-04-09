@@ -1,0 +1,52 @@
+{
+	"name": "vidro",
+	"plugin-id": "Sprite",
+	"sid": 833913836366091,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 137,
+						"height": 56,
+						"originX": 0.5364963503649635,
+						"originY": 0.4642857142857143,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 450703,
+						"collisionPoly": {
+							"points": [
+								0.0364963503649635,
+								0.017857142857142856,
+								0.9927007299270073,
+								0.017857142857142856,
+								0.9927007299270073,
+								0.9821428571428571,
+								0.0364963503649635,
+								0.9821428571428571
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 724052839921428,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

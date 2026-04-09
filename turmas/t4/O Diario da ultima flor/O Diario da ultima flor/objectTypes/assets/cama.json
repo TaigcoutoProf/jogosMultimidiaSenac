@@ -1,0 +1,60 @@
+{
+	"name": "cama",
+	"plugin-id": "Sprite",
+	"sid": 667250222528170,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 59,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.4083333333333333,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1495018,
+						"collisionPoly": {
+							"points": [
+								0.15677966101694912,
+								0.2125000000000002,
+								0.5042372881355942,
+								0.1791666666666667,
+								0.8305084745762715,
+								0.32083333333333325,
+								0.8262711864406784,
+								0.7125000000000005,
+								0.665254237288136,
+								0.7250000000000003,
+								0.4745762711864404,
+								0.7416666666666667,
+								0.3305084745762709,
+								0.7333333333333338,
+								0.13559322033898308,
+								0.7208333333333332
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 291745028338224,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

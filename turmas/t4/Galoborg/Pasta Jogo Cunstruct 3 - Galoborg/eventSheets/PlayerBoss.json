@@ -1,0 +1,357 @@
+{
+	"name": "PlayerBoss",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 635066657236764,
+					"parameters": {
+						"variable": "Pause"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 843587460366757,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "PlayerAni3",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 658571101772744
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-animation",
+									"objectClass": "PlayerBoss",
+									"sid": 492029599946852
+								}
+							],
+							"sid": 297159334676994
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Teclado",
+									"sid": 197768905830577,
+									"parameters": {
+										"key": 38
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "PlayerBoss",
+									"sid": 662413799446004,
+									"parameters": {
+										"frame-number": "0"
+									}
+								}
+							],
+							"sid": 173608275238694
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Teclado",
+									"sid": 628213138359939,
+									"parameters": {
+										"key": 39
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "PlayerBoss",
+									"sid": 442964664389895,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 601336354157578
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Teclado",
+									"sid": 372681484562703,
+									"parameters": {
+										"key": 40
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "PlayerBoss",
+									"sid": 147809083942814,
+									"parameters": {
+										"frame-number": "2"
+									}
+								}
+							],
+							"sid": 230169177625406
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Teclado",
+									"sid": 635133295607253,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "PlayerBoss",
+									"sid": 326950651634987,
+									"parameters": {
+										"frame-number": "3"
+									}
+								}
+							],
+							"sid": 103483037775356
+						}
+					],
+					"sid": 463330059493339
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 583849034775547,
+					"parameters": {
+						"variable": "PowerUp",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 700793075171702,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "MovimentoCaixaBoss",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 270833428439880,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [],
+							"sid": 819499775886077
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 436508914163595,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [],
+							"sid": 925200415179437
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 186698002467537,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [],
+							"sid": 746911695865981
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 684250740510141,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [],
+							"sid": 133290859066003
+						}
+					],
+					"sid": 930875442075344
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 393410033739038,
+					"parameters": {
+						"variable": "PowerUp",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 995999591665935,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "CaixaPower",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 793011182349572,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [],
+							"sid": 216601639098772
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 355828095940357,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [],
+							"sid": 869491221164845
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 304217898398971,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [],
+							"sid": 715280837444740
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 640062496552471,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [],
+							"sid": 944919655282121
+						}
+					],
+					"sid": 892194821535999
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "PlayerBoss",
+					"sid": 993891577536404,
+					"parameters": {
+						"object": "SaidaB1",
+						"offset-x": "0",
+						"offset-y": "0"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "SaidaB1",
+					"sid": 551464407793855
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 999698956793973,
+					"parameters": {
+						"layout": "\"Fase2\""
+					}
+				}
+			],
+			"sid": 987967232337494
+		}
+	],
+	"sid": 599645494502436
+}

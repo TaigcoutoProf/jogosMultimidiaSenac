@@ -1,0 +1,250 @@
+{
+	"name": "e_diario",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Toque",
+					"sid": 727631946677328,
+					"parameters": {
+						"object": "botão"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 684835075633494,
+					"parameters": {
+						"variable": "cut_diario",
+						"value": "true"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 609379101812169,
+					"parameters": {
+						"variable": "qtd_eventos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 593352226258221,
+					"parameters": {
+						"layout": "BaseJogo"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 223160238291598,
+					"parameters": {
+						"audio-file": "switch",
+						"loop": "not-looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"menu\""
+					}
+				}
+			],
+			"sid": 457394346900006
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "scroll_down",
+					"sid": 339016912069181,
+					"parameters": {
+						"comparison": 5,
+						"y-co-ordinate": "854"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "scroll_down",
+					"sid": 279837224531510,
+					"parameters": {
+						"y": "854"
+					}
+				}
+			],
+			"sid": 477005228472429
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "scroll_down",
+					"sid": 147597342604286,
+					"parameters": {
+						"comparison": 3,
+						"y-co-ordinate": "-520"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "scroll_down",
+					"sid": 193099326945580,
+					"parameters": {
+						"y": "-520"
+					}
+				}
+			],
+			"sid": 134220539035904
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 107761877505561
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "puzzle_diario",
+					"sid": 412700242481007,
+					"behaviorType": "Fixar",
+					"parameters": {
+						"pin-to": "scroll_down",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "botão",
+					"sid": 925301727656204,
+					"behaviorType": "Fixar",
+					"parameters": {
+						"pin-to": "scroll_down",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 370656839309930
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-mouse-wheel",
+					"objectClass": "Mouse",
+					"sid": 409969304504973,
+					"parameters": {
+						"direction": "up"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "scroll_down",
+					"sid": 213736980473137,
+					"parameters": {
+						"y": "scroll_down.Y + 40"
+					}
+				}
+			],
+			"sid": 138303288251260
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-mouse-wheel",
+					"objectClass": "Mouse",
+					"sid": 455510418483207,
+					"parameters": {
+						"direction": "down"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "scroll_down",
+					"sid": 646559031396865,
+					"parameters": {
+						"y": "scroll_down.Y - 40"
+					}
+				}
+			],
+			"sid": 166753029351708
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 179248362172949,
+					"parameters": {
+						"object": "botão"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style2",
+					"objectClass": "Mouse",
+					"sid": 325916590771967,
+					"parameters": {
+						"cursor-style": "pointer"
+					}
+				}
+			],
+			"sid": 352354492965926
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 685891580507217,
+					"parameters": {
+						"object": "botão"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style2",
+					"objectClass": "Mouse",
+					"sid": 209415565505420,
+					"parameters": {
+						"cursor-style": "normal"
+					}
+				}
+			],
+			"sid": 176236416109924
+		}
+	],
+	"sid": 401077440334493
+}

@@ -1,0 +1,10 @@
+{
+	"name": "textodiario",
+	"plugin-id": "Text",
+	"sid": 603213329041112,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

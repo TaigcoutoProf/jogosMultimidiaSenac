@@ -1,0 +1,23 @@
+{
+	"name": "BG4",
+	"plugin-id": "TiledBg",
+	"sid": 669078940693683,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1280,
+		"height": 640,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 5576696,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -1,0 +1,186 @@
+{
+	"name": "fase2",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Vida&GameOver"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "MonstroComportamento"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Caixa"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Player"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Tempo"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 594628690898597
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 538453684649535,
+					"parameters": {
+						"audio-file": "judgment_fase1",
+						"loop": "looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"fase1\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 624608524675199,
+					"parameters": {
+						"variable": "tempo",
+						"value": "300"
+					}
+				}
+			],
+			"sid": 168298782694199
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 708270485480120
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Saida",
+					"sid": 465129480338231,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 941974989511316
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 673811113772000,
+					"parameters": {
+						"variable": "Moeda",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Saida",
+					"sid": 259170574897388,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 290063356556617
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "galoborg",
+					"sid": 947770227945806,
+					"parameters": {
+						"object": "Saida",
+						"offset-x": "0",
+						"offset-y": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 692076123567715,
+					"parameters": {
+						"variable": "Moeda",
+						"comparison": 5,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 581009921549559,
+					"parameters": {
+						"layout": "fase3"
+					}
+				}
+			],
+			"sid": 124155797140535
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 714477180826012
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Contagem_pontos",
+					"sid": 532831563959455,
+					"parameters": {
+						"text": "Pontos"
+					}
+				}
+			],
+			"sid": 417704886222166
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 203744396846125
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 473942622635102,
+					"parameters": {
+						"variable": "Moeda",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 358115469695866
+		}
+	],
+	"sid": 868706367297376
+}

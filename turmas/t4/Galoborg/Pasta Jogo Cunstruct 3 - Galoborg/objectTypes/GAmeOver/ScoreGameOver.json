@@ -1,0 +1,10 @@
+{
+	"name": "ScoreGameOver",
+	"plugin-id": "Text",
+	"sid": 258602592596993,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

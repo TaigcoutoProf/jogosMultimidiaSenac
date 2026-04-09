@@ -1,0 +1,413 @@
+{
+	"name": "e_intro",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "page",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 377949122070395
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 953565953639342
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "capitulo1",
+					"sid": 533567542920739,
+					"disabled": true,
+					"parameters": {
+						"animation": "\"0\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "capitulo1",
+					"sid": 909888528628675
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 393506020111186,
+					"parameters": {
+						"variable": "page"
+					}
+				}
+			],
+			"sid": 720963557250521
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Toque",
+					"sid": 405579975366618,
+					"parameters": {
+						"object": "capitulo1",
+						"type": "start"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "capitulo1",
+					"sid": 408824001259073,
+					"parameters": {
+						"comparison": 0,
+						"number": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-animation",
+					"objectClass": "capitulo1",
+					"sid": 903861094321067,
+					"parameters": {
+						"from": "current-frame"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "capitulo1",
+					"sid": 961357935735304,
+					"parameters": {
+						"animation": "\"1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 449753469607084
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "capitulo1",
+					"sid": 676814874410623,
+					"parameters": {
+						"comparison": 0,
+						"number": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 837321487063475,
+					"parameters": {
+						"variable": "page",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "capitulo1",
+					"sid": 588973720847452
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 945525335475815,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 733644536465759,
+					"parameters": {
+						"variable": "page",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 119003309418370
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 839289678709033,
+					"parameters": {
+						"object": "Sprite10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 899367281278785,
+					"parameters": {
+						"variable": "page",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 544382705890461,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "capitulo1",
+					"sid": 276914598598104,
+					"parameters": {
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 177349125597060
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "capitulo1",
+					"sid": 348140923314735,
+					"parameters": {
+						"comparison": 0,
+						"number": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 150768702741393,
+					"disabled": true,
+					"parameters": {
+						"variable": "page",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "capitulo1",
+					"sid": 917668897156230
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 172249850236368,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 132957180768455
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "capitulo1",
+					"sid": 820745857111510,
+					"parameters": {
+						"comparison": 0,
+						"number": "6"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 824710608947105,
+					"parameters": {
+						"variable": "page",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "capitulo1",
+					"sid": 951355209805601
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 542320948454374,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 532530158624768,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 504463631977828,
+					"parameters": {
+						"object": "Sprite10"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "capitulo1",
+					"sid": 974368982013382,
+					"parameters": {
+						"comparison": 0,
+						"number": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 908769070725906,
+					"disabled": true,
+					"parameters": {
+						"variable": "page",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 686335338099459,
+					"parameters": {
+						"layout": "BaseJogo"
+					}
+				}
+			],
+			"sid": 457327157191809
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 111271091021186,
+					"parameters": {
+						"object": "Sprite10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style2",
+					"objectClass": "Mouse",
+					"sid": 183360501282924,
+					"parameters": {
+						"cursor-style": "pointer"
+					}
+				}
+			],
+			"sid": 704124593874213,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 102627480855951,
+					"parameters": {
+						"object": "capitulo1"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "capitulo1",
+					"sid": 421719380816990,
+					"disabled": true,
+					"parameters": {
+						"comparison": 0,
+						"number": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style2",
+					"objectClass": "Mouse",
+					"sid": 539829381276733,
+					"parameters": {
+						"cursor-style": "pointer"
+					}
+				}
+			],
+			"sid": 772610088684427
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 919566762078948,
+					"parameters": {
+						"object": "capitulo1"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "capitulo1",
+					"sid": 104726700684596,
+					"parameters": {
+						"comparison": 0,
+						"number": "0"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 296736487044778,
+					"parameters": {
+						"object": "Sprite10"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style2",
+					"objectClass": "Mouse",
+					"sid": 314884308060444,
+					"parameters": {
+						"cursor-style": "normal"
+					}
+				}
+			],
+			"sid": 197166538150072
+		}
+	],
+	"sid": 717161827325093
+}

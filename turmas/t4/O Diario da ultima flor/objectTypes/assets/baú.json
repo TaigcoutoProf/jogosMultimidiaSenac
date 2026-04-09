@@ -1,0 +1,89 @@
+{
+	"name": "baú",
+	"plugin-id": "Sprite",
+	"sid": 962060766623465,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persistir",
+			"sid": 710126026144927
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 852627133114419
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 26,
+						"height": 18,
+						"originX": 0.5384615384615384,
+						"originY": 2.2222222222222223,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7014523,
+						"collisionPoly": {
+							"points": [
+								0.07692307692307693,
+								0.05555555555555555,
+								0.9615384615384616,
+								0.1111111111111111,
+								0.9230769230769231,
+								1,
+								0.038461538461538464,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 26,
+						"height": 30,
+						"originX": 0.5384615384615384,
+						"originY": 1.3333333333333333,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8595049,
+						"collisionPoly": {
+							"points": [
+								0.07692307692307693,
+								0.03333333333333333,
+								0.9615384615384616,
+								0.06666666666666667,
+								0.9230769230769231,
+								0.9666666666666667,
+								0.038461538461538464,
+								0.9333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 905637564127932,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

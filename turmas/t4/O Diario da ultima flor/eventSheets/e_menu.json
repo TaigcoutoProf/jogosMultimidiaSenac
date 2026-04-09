@@ -1,0 +1,290 @@
+{
+	"name": "e_menu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 275747044390637
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 600573126226382,
+					"parameters": {
+						"audio-file": "musica menu",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"menu\""
+					}
+				}
+			],
+			"sid": 698002259283142
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 504608226903278
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 362140160053206,
+					"parameters": {
+						"audio-file": "musica menu",
+						"loop": "looping",
+						"volume": "-100",
+						"stereo-pan": "0",
+						"tag-optional": "\"menu\""
+					}
+				}
+			],
+			"sid": 727566090179485
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "jogar",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Toque",
+							"sid": 189772761608613,
+							"parameters": {
+								"object": "font_newgame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 136150706263540,
+							"parameters": {
+								"layout": "Intro"
+							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 219832454792633,
+							"parameters": {
+								"reset-static": true
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 667373585162340,
+							"parameters": {
+								"audio-file": "Menuselecao2",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"menu\""
+							}
+						}
+					],
+					"sid": 414990551874944
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 814857549563870,
+							"parameters": {
+								"object": "font_newgame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 649725450253784,
+							"parameters": {
+								"cursor-style": "pointer"
+							}
+						}
+					],
+					"sid": 749922813529190
+				}
+			],
+			"sid": 669818523280344
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "créditos",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Toque",
+							"sid": 518022057042467,
+							"parameters": {
+								"object": "fon_credits"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 488515548226430,
+							"parameters": {
+								"layout": "creditos"
+							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 180615831117608,
+							"parameters": {
+								"reset-static": true
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 353074906687135,
+							"parameters": {
+								"audio-file": "Menuselecao2",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"menu\""
+							}
+						}
+					],
+					"sid": 356546888924708
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 605868811794506,
+							"parameters": {
+								"object": "fon_credits"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 520566831061953,
+							"parameters": {
+								"cursor-style": "pointer"
+							}
+						}
+					],
+					"sid": 339679084395474
+				}
+			],
+			"sid": 531361469807122
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "opções",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 649800730425752,
+							"parameters": {
+								"object": "font_opções"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 786351399021095,
+							"parameters": {
+								"cursor-style": "pointer"
+							}
+						}
+					],
+					"sid": 817043671450317
+				}
+			],
+			"sid": 146068955545118
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "menu_geral",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 947853960767744,
+							"parameters": {
+								"object": "font_newgame"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 146848125561393,
+							"parameters": {
+								"object": "fon_credits"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 955594716982949,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						}
+					],
+					"sid": 591455718561405
+				}
+			],
+			"sid": 287945016649881
+		}
+	],
+	"sid": 411100181550380
+}

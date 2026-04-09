@@ -1,0 +1,70 @@
+{
+	"name": "malas",
+	"plugin-id": "Sprite",
+	"sid": 752629270758806,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 561758925382407
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 38,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9985150,
+						"collisionPoly": {
+							"points": [
+								0.48,
+								0.02631578947368421,
+								0.6,
+								0.02631578947368421,
+								0.72,
+								0.07894736842105263,
+								0.96,
+								0.23684210526315788,
+								0.96,
+								0.9473684210526315,
+								0.92,
+								0.9736842105263158,
+								0.12,
+								0.9736842105263158,
+								0.08,
+								0.9473684210526315,
+								0.12,
+								0.23684210526315788,
+								0.36,
+								0.07894736842105263
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 288346926106496,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,87 @@
+{
+	"name": "e_menu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 583310217886792,
+					"parameters": {
+						"object": "newGame"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 478103286767572,
+					"parameters": {
+						"layout": "Intro"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 806581956936143,
+					"parameters": {
+						"reset-static": true
+					}
+				}
+			],
+			"sid": 700914886792486
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 608089370901651,
+					"parameters": {
+						"object": "newGame"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style2",
+					"objectClass": "Mouse",
+					"sid": 240533141010760,
+					"parameters": {
+						"cursor-style": "pointer"
+					}
+				}
+			],
+			"sid": 656462400635161
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 424459630116872,
+					"parameters": {
+						"object": "newGame"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style2",
+					"objectClass": "Mouse",
+					"sid": 738800699691009,
+					"parameters": {
+						"cursor-style": "normal"
+					}
+				}
+			],
+			"sid": 351340441189903
+		}
+	],
+	"sid": 411100181550380
+}

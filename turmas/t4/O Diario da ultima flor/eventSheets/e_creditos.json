@@ -1,0 +1,42 @@
+{
+	"name": "e_creditos",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Toque",
+					"sid": 284554125543640,
+					"parameters": {
+						"object": "voltar_menu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 390651670515940,
+					"parameters": {
+						"layout": "Menu Principal"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 333160316257010,
+					"parameters": {
+						"audio-file": "Menuselecao2",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"menu\""
+					}
+				}
+			],
+			"sid": 519409726605668
+		}
+	],
+	"sid": 281767704267884
+}

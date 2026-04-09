@@ -1,0 +1,153 @@
+{
+	"name": "dialogo",
+	"events": [
+		{
+			"functionName": "diálogo",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "t",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 304871785131219
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "dialogo1",
+					"sid": 843573099382071
+				},
+				{
+					"id": "destroy",
+					"objectClass": "texto_bg",
+					"sid": 922644820403162
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 577274195654331,
+					"parameters": {
+						"object-to-create": "texto_bg",
+						"layer": "\"HUD texto\"",
+						"x": "4.5",
+						"y": "397",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 393322211395879,
+					"parameters": {
+						"object-to-create": "textolia",
+						"layer": "\"HUD texto\"",
+						"x": "427",
+						"y": "437",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "textolia",
+					"sid": 297470938875139,
+					"parameters": {
+						"text": "t",
+						"duration": "2"
+					}
+				}
+			],
+			"sid": 791223401172362
+		},
+		{
+			"functionName": "destroydialogo",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "textolia",
+					"sid": 667798419787008
+				},
+				{
+					"id": "destroy",
+					"objectClass": "texto_bg",
+					"sid": 717985297849355
+				}
+			],
+			"sid": 128539422289625
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 612046403982501,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-running-typewriter-text",
+					"objectClass": "textolia",
+					"sid": 788203266758563
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-finish",
+					"objectClass": "textolia",
+					"sid": 108208527157202
+				}
+			],
+			"sid": 446788755392325
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 396100994525322,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-running-typewriter-text",
+					"objectClass": "textolia",
+					"sid": 177641618498652,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 714437320884631,
+					"parameters": {
+						"tag": "\"next\""
+					}
+				}
+			],
+			"sid": 282472657944671
+		}
+	],
+	"sid": 722450999112990
+}

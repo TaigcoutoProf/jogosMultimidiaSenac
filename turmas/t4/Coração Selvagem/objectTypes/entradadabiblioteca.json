@@ -1,0 +1,54 @@
+{
+	"name": "entradadabiblioteca",
+	"plugin-id": "Sprite",
+	"sid": 821662089121245,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 55,
+						"height": 71,
+						"originX": 0.4545454545454546,
+						"originY": 0.39436619718309857,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3611562,
+						"collisionPoly": {
+							"points": [
+								0.8545454545454545,
+								0.9859154929577465,
+								0.018181818181818188,
+								0.9859154929577465,
+								0.018181818181818188,
+								0.07042253521126761,
+								0.7818181818181819,
+								0.014084507042253521,
+								0.9090909090909091,
+								0.014084507042253521
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 396208083671900,
+				"name": "Animação 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

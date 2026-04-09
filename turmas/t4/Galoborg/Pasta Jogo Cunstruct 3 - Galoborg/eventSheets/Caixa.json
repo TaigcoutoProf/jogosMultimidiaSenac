@@ -1,0 +1,292 @@
+{
+	"name": "Caixa",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Caixa",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "32_caixa",
+							"sid": 334930385662986,
+							"parameters": {
+								"object": "drone_patrulheiro"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 256213120935892
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 402494598907602,
+							"parameters": {
+								"audio-file": "patrulheiro_morte",
+								"loop": "not-looping",
+								"volume": "-05",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "drone_patrulheiro",
+							"sid": 968931655518286
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 535375063972249,
+							"parameters": {
+								"object-to-create": "drone_patrulheiro_morte",
+								"layer": "\"inimigos\"",
+								"x": "drone_patrulheiro.ImagePointX(1)",
+								"y": "drone_patrulheiro.ImagePointy(1)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 473219501546966,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "drone_patrulheiro_morte",
+							"sid": 827666949744158
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 686391614059616,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "30"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Contagem_pontos",
+							"sid": 175548825034384,
+							"parameters": {
+								"text": "Pontos"
+							}
+						}
+					],
+					"sid": 212172370860475
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "32_caixa",
+							"sid": 926027752646499,
+							"parameters": {
+								"object": "drone_perseguidor"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 454297899303381
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 528443498808397,
+							"parameters": {
+								"audio-file": "perseguidor_morte",
+								"loop": "not-looping",
+								"volume": "-05",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "drone_perseguidor",
+							"sid": 674279825036459
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 486579516932132,
+							"parameters": {
+								"object-to-create": "drone_perseguidor_morte",
+								"layer": "\"inimigos\"",
+								"x": "drone_perseguidor.ImagePointX(1)",
+								"y": "drone_perseguidor.ImagePointy(1)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 193187990165547,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "drone_perseguidor_morte",
+							"sid": 830805307719531
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 808922697247914,
+							"parameters": {
+								"variable": "Pontos",
+								"value": "50"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Contagem_pontos",
+							"sid": 514497365456876,
+							"parameters": {
+								"text": "Pontos"
+							}
+						}
+					],
+					"sid": 230401585319354
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "32_caixa",
+							"sid": 386698234692982,
+							"parameters": {
+								"object": "32_caixa"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "32_caixa",
+							"sid": 360094830882556
+						}
+					],
+					"sid": 310605540936247
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "32_caixa",
+							"sid": 763678332219078,
+							"parameters": {
+								"object": "32_Parede"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "32_caixa",
+							"sid": 451850666591803
+						}
+					],
+					"sid": 876486198183523
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "32_caixa",
+							"sid": 804979096712261,
+							"parameters": {
+								"object": "obstaculos_concreto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "32_caixa",
+							"sid": 190919254243983
+						}
+					],
+					"sid": 730161840969738
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 910918629978007
+						}
+					],
+					"actions": [
+						{
+							"id": "set-solid-collision-filter",
+							"objectClass": "32_caixa",
+							"sid": 666774485372859,
+							"parameters": {
+								"mode": "exclusive",
+								"tags": "\"Caixa\""
+							}
+						},
+						{
+							"id": "set-solid-collision-filter",
+							"objectClass": "32_caixa",
+							"sid": 279956850060343,
+							"parameters": {
+								"mode": "exclusive",
+								"tags": "\"Monstro\""
+							}
+						},
+						{
+							"id": "set-solid-collision-filter",
+							"objectClass": "32_caixa",
+							"sid": 174195080057990,
+							"parameters": {
+								"mode": "inclusive",
+								"tags": "\"Player\""
+							}
+						},
+						{
+							"id": "set-solid-collision-filter",
+							"objectClass": "32_caixa",
+							"sid": 707960774533860,
+							"parameters": {
+								"mode": "inclusive",
+								"tags": "\"caixas_boss\""
+							}
+						}
+					],
+					"sid": 904906401983720
+				}
+			],
+			"sid": 524803719432239
+		}
+	],
+	"sid": 476273414425680
+}

@@ -1,0 +1,60 @@
+{
+	"name": "ecapivara",
+	"plugin-id": "Sprite",
+	"sid": 217050756759183,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 14,
+						"height": 14,
+						"originX": 0.5714285714285714,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4825761,
+						"collisionPoly": {
+							"points": [
+								0.14285714285714285,
+								0.07142857142857142,
+								0.8571428571428571,
+								0.07142857142857142,
+								0.9285714285714286,
+								0.14285714285714285,
+								0.9285714285714286,
+								0.8571428571428571,
+								0.8571428571428571,
+								0.9285714285714286,
+								0.14285714285714285,
+								0.9285714285714286,
+								0.07142857142857142,
+								0.8571428571428571,
+								0.07142857142857142,
+								0.14285714285714285
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 368776492103188,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,2030 @@
+{
+	"name": "E_base jogo",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "e_dialogo"
+		},
+		{
+			"eventType": "variable",
+			"name": "broche",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 734547071069234
+		},
+		{
+			"eventType": "variable",
+			"name": "chave_bau",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 985282562176475
+		},
+		{
+			"eventType": "variable",
+			"name": "estante_livro",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 451944267441018
+		},
+		{
+			"eventType": "variable",
+			"name": "bau_aberto",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 743732816487845
+		},
+		{
+			"eventType": "variable",
+			"name": "diario",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 552072592920048
+		},
+		{
+			"eventType": "variable",
+			"name": "cut_diario",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 414019378258509
+		},
+		{
+			"eventType": "variable",
+			"name": "qtd_eventos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 512665919044643
+		},
+		{
+			"eventType": "variable",
+			"name": "inputfocus",
+			"type": "string",
+			"initialValue": "pop-ups",
+			"comment": "Defines what will be affected by the clicks",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 929320390359040
+		},
+		{
+			"eventType": "variable",
+			"name": "amimir",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 453282661280809
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Fader",
+			"description": "Fotografias e outros popus",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Toque",
+							"sid": 302468744570462,
+							"parameters": {
+								"object": "Fader"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 203240245223154
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Toque",
+							"sid": 163788747218359,
+							"parameters": {
+								"object": "BookCloseUp"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-opacity",
+							"objectClass": "BookCloseUp",
+							"sid": 785606371549645,
+							"parameters": {
+								"comparison": 0,
+								"opacity": "100"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 493113697389076
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Toque",
+							"sid": 482263975199907,
+							"parameters": {
+								"object": "BookCloseUp"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 265128532849348,
+							"parameters": {
+								"layer": "\"popup\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 689463667709400
+				}
+			],
+			"sid": 912555923482092
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Geral",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 776708962230210
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 442632955882801,
+							"parameters": {
+								"audio-file": "lofi",
+								"loop": "looping",
+								"volume": "-20",
+								"stereo-pan": "0",
+								"tag-optional": "\"menu\""
+							}
+						}
+					],
+					"sid": 668346865274976
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 619923762979520,
+							"parameters": {
+								"object": "baú"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 752708978989364,
+							"parameters": {
+								"cursor-style": "pointer"
+							}
+						}
+					],
+					"sid": 818759136055574
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 107737553346417,
+							"parameters": {
+								"object": "LIVRO"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 216793154724169,
+							"parameters": {
+								"cursor-style": "pointer"
+							}
+						}
+					],
+					"sid": 165986654976234
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 797458179983718,
+							"parameters": {
+								"object": "cama"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 308105019579417,
+							"parameters": {
+								"cursor-style": "help"
+							}
+						}
+					],
+					"sid": 871606492616357
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 440183483578496,
+							"parameters": {
+								"object": "quadroPopup"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 723864351054846,
+							"parameters": {
+								"cursor-style": "pointer"
+							}
+						}
+					],
+					"sid": 230259278691132
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 853264812978463,
+							"parameters": {
+								"object": "menu_button"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 607372735293491,
+							"parameters": {
+								"cursor-style": "pointer"
+							}
+						}
+					],
+					"sid": 676106640065066
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 382792870899131,
+							"parameters": {
+								"object": "botão"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 675865214819570,
+							"parameters": {
+								"cursor-style": "pointer"
+							}
+						}
+					],
+					"sid": 172935066579178
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 698442816400889,
+							"parameters": {
+								"object": "botao_voltar_menu"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 885398569042632,
+							"parameters": {
+								"cursor-style": "pointer"
+							}
+						}
+					],
+					"sid": 513933981144563
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 595529346590578,
+							"parameters": {
+								"object": "botao_cancelar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 503586392708518,
+							"parameters": {
+								"cursor-style": "pointer"
+							}
+						}
+					],
+					"sid": 816973498406318
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 378144338121020,
+							"parameters": {
+								"object": "BookCloseUp"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 669418879584076,
+							"disabled": true,
+							"parameters": {
+								"cursor-style": "pointer"
+							}
+						}
+					],
+					"sid": 582891997101095
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 755628094704936,
+							"parameters": {
+								"object": "baú"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 109504952820206,
+							"parameters": {
+								"object": "cama"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 849396666620972,
+							"parameters": {
+								"object": "LIVRO"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 116212943040536,
+							"parameters": {
+								"object": "quadroPopup"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 686846311379283,
+							"parameters": {
+								"object": "botão"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 332019444604988,
+							"disabled": true,
+							"parameters": {
+								"object": "BookCloseUp"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 273494265263126,
+							"parameters": {
+								"object": "botao_voltar_menu"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 934601582843661,
+							"parameters": {
+								"object": "botao_cancelar"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 113534721233201,
+							"parameters": {
+								"object": "menu_button"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 987478340130737,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						}
+					],
+					"sid": 312075659011698
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 669883660583458,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "tuto_icon"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "tutorial",
+							"sid": 578860773936248,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 351923114974751
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 530926105842752,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "tutorial",
+							"sid": 634507027695653
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "tutorial",
+							"sid": 745661832799789,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 285269870834616
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 793644890095484,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "menu_button"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 761373342165754,
+							"parameters": {
+								"layer": "9",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 181119698949067,
+							"parameters": {
+								"layer": "9",
+								"interactive": true
+							}
+						}
+					],
+					"sid": 433984914834703
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 432800232105294,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "botao_cancelar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 111149718175876,
+							"parameters": {
+								"layer": "9",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 454424356515452,
+							"parameters": {
+								"layer": "9",
+								"interactive": false
+							}
+						}
+					],
+					"sid": 782838652961323
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 267221233209552,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "botao_voltar_menu"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 582449331761153,
+							"parameters": {
+								"layout": "Menu Principal"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "personagem",
+							"sid": 998819555798476,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 909015186269521,
+							"parameters": {
+								"layer": "9",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 584518871876995,
+							"parameters": {
+								"layer": "9",
+								"interactive": false
+							}
+						}
+					],
+					"sid": 590733037738086
+				}
+			],
+			"sid": 292923228714167
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Dialogo",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 909302351238404,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "personagem",
+							"sid": 991171281258734,
+							"parameters": {
+								"object": "scenetrigger"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "scenetrigger",
+							"sid": 975646502345824,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "scenetrigger",
+							"sid": 487280630321530,
+							"parameters": {
+								"instance-variable": "id",
+								"value": "-1"
+							}
+						},
+						{
+							"callFunction": "diálogo2",
+							"sid": 610873897772640,
+							"parameters": [
+								"\"mais uma das flores artificiais da vovó.. .\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 947658966419733,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "diálogo2",
+							"sid": 878549173923432,
+							"parameters": [
+								"\"ao menos sobrevivem sem o menor esforço.. .\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 825114595757128,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "diálogo2",
+							"sid": 852381072631726,
+							"parameters": [
+								"\".. .\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 344555291157906,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroydialogo2",
+							"sid": 404304497874252
+						}
+					],
+					"sid": 980555378959884
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 409454642645858,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "personagem",
+							"sid": 490457356056684,
+							"parameters": {
+								"object": "Scenetrigger2"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Scenetrigger2",
+							"sid": 465376735780999,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Scenetrigger2",
+							"sid": 935900253555575,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "-2"
+							}
+						},
+						{
+							"callFunction": "diálogo2",
+							"sid": 689250139732950,
+							"parameters": [
+								"\"a poltrona favorita dela, todas as noites ela fazia anotações aqui\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 372652367944547,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "diálogo2",
+							"sid": 540906309764315,
+							"parameters": [
+								"\"me pergunto o porque era sempre quando ela imaginava que eu estava a dormir\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 136432710778664,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "diálogo2",
+							"sid": 174693491941704,
+							"parameters": [
+								"\"porque tão misteriosa?!\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 681958560951979,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroydialogo2",
+							"sid": 335450124417295
+						}
+					],
+					"sid": 781568732621572
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "hint02",
+							"sid": 329656549564901,
+							"parameters": {
+								"object": "personagem"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "hint02",
+							"sid": 182600436050078,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 243413073844664
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "hint02",
+							"sid": 710837916526640,
+							"parameters": {
+								"object": "personagem"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "hint02",
+							"sid": 280236979688458,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 433332259175260
+				}
+			],
+			"sid": 675792766073011
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Cutscenes",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 778500521500355,
+							"parameters": {
+								"variable": "diario"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 512081140370056,
+							"parameters": {
+								"variable": "cut_diario"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 339939554870455,
+							"parameters": {
+								"layout": "cutsdiario"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "diario",
+							"sid": 603502866549571
+						}
+					],
+					"sid": 400288561573355
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Toque",
+							"sid": 236134841427548,
+							"parameters": {
+								"object": "baú"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 864061662087789,
+							"parameters": {
+								"variable": "chave_bau"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "baú",
+							"sid": 696995387434473,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 595285867852016,
+							"parameters": {
+								"variable": "chave_bau",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 715746000867039,
+							"parameters": {
+								"variable": "amimir",
+								"value": "false"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 402176655612523,
+							"parameters": {
+								"layout": "cutbau"
+							}
+						}
+					],
+					"sid": 530613902896851
+				}
+			],
+			"sid": 320275539747185
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Cenario",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 502064056038514
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 498155201491961,
+							"parameters": {
+								"variable": "bau_aberto"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "baú",
+							"sid": 612941686934814,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "stop-animation",
+							"objectClass": "baú",
+							"sid": 362609868064447
+						}
+					],
+					"sid": 710769842981157
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 731869492105247
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 907128750401899,
+							"parameters": {
+								"variable": "estante_livro"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "estante_livro",
+							"sid": 946734906576157,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "stop-animation",
+							"objectClass": "estante_livro",
+							"sid": 723542994315326
+						}
+					],
+					"sid": 173820653099298
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 863786534329610
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 338661424018660,
+							"parameters": {
+								"variable": "amimir",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 332346121022855,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-resume",
+							"objectClass": "System",
+							"sid": 666749686457773
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 109480519950688,
+							"parameters": {
+								"variable": "amimir",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 596195910363028,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "personagem",
+							"sid": 903498249387383,
+							"parameters": {
+								"object": "diario"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 785443278667619,
+							"parameters": {
+								"variable": "diario",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "personagem",
+							"sid": 768137068212152,
+							"parameters": {
+								"animation": "\"queda\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 477820291452386,
+							"disabled": true,
+							"parameters": {
+								"layout": "cutsdiario"
+							}
+						}
+					],
+					"sid": 707884029773888
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Toque",
+							"sid": 307183647445071,
+							"parameters": {
+								"object": "LIVRO"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 681850878212015,
+							"parameters": {
+								"variable": "chave_bau",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 242912382210960,
+							"parameters": {
+								"variable": "estante_livro",
+								"value": "true"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "LIVRO",
+							"sid": 989242258108944
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "estante_livro",
+							"sid": 756280217739695,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "personagem",
+							"sid": 436287710323029,
+							"parameters": {
+								"animation": "\"surpresa\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 768622661242162
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 390619778159799,
+							"parameters": {
+								"variable": "qtd_eventos",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "porta",
+							"sid": 914355662857967
+						}
+					],
+					"sid": 247222397460276
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Toque",
+							"sid": 586876044999895,
+							"parameters": {
+								"object": "quadroPopup"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 165681820009008,
+							"parameters": {
+								"object": "quadroPopup"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 571261254494457,
+							"parameters": {
+								"layer": "4",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 414874426043933,
+							"parameters": {
+								"layer": "\"popup\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 142025853750969
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 952224564345292
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 620348550607391,
+							"parameters": {
+								"layer": "\"popup\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 884774561536750
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 415517334883265,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "cama"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 693469826878358,
+							"parameters": {
+								"variable": "amimir",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 270215289107022
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "personagem",
+							"sid": 786467952669492,
+							"parameters": {
+								"object": "sensor_porta"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 960064110738112,
+							"parameters": {
+								"variable": "bau_aberto"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 997145262845254,
+							"parameters": {
+								"variable": "cut_diario"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 231094338841107,
+							"parameters": {
+								"variable": "estante_livro"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 754872067163750,
+							"parameters": {
+								"variable": "diario"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 719051840909886,
+							"parameters": {
+								"variable": "chave_bau"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "alerta_quarto",
+							"sid": 940550460244399,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "alerta_quarto",
+							"sid": 177468672142881,
+							"parameters": {
+								"text": "\"Ainda tenho coisas a fazer!\"",
+								"duration": "2"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 436801194199598,
+							"parameters": {
+								"seconds": "4.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "alerta_quarto",
+							"sid": 999406012721853,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 758531884929664
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "personagem",
+							"sid": 260140739834662,
+							"parameters": {
+								"object": "teleporte_creditos"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 583992793623378,
+							"parameters": {
+								"layout": "agradecimento"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "personagem",
+							"sid": 390086713167499,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 203336187144516,
+							"parameters": {
+								"layer": "9",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 254086806664587,
+							"parameters": {
+								"layer": "9",
+								"interactive": false
+							}
+						},
+						{
+							"id": "reset-eventvar",
+							"objectClass": "System",
+							"sid": 631275276741814,
+							"disabled": true,
+							"parameters": {
+								"variable": "amimir"
+							}
+						}
+					],
+					"sid": 819741461458969
+				}
+			],
+			"sid": 355372648640333
+		},
+		{
+			"bookmark": true,
+			"eventType": "group",
+			"disabled": false,
+			"title": "Inventario",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 690164236240183,
+							"parameters": {
+								"variable": "chave_bau"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "chave_inv",
+							"sid": 824094904793683,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 392327645532517
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 845428389440795,
+							"parameters": {
+								"variable": "diario"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "diario_inv",
+							"sid": 787241157954047,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 338397869064386
+				}
+			],
+			"sid": 772437536511376
+		},
+		{
+			"bookmark": true,
+			"eventType": "group",
+			"disabled": false,
+			"title": "Personagem",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "personagem",
+							"sid": 826134469586184,
+							"behaviorType": "8Direções"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-speed",
+							"objectClass": "personagem",
+							"sid": 549852578722407,
+							"parameters": {
+								"speed": "10"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 723542807504923,
+							"parameters": {
+								"variable": "amimir",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 883032821400380
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 215586564678503
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "personagem",
+							"sid": 607514028855790,
+							"behaviorType": "8Direções",
+							"parameters": {
+								"speed": "0"
+							}
+						}
+					],
+					"sid": 351805271823201
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 634754699953267,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "personagem",
+							"sid": 742402853916949,
+							"parameters": {
+								"animation": "\"esquerda\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "personagem",
+							"sid": 158213904331475,
+							"behaviorType": "8Direções",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 890508398012880,
+							"disabled": true,
+							"parameters": {
+								"audio-file": "passos",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"passos\""
+							}
+						}
+					],
+					"sid": 141157679360727
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 581837850186786,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "personagem",
+							"sid": 461362209356040,
+							"parameters": {
+								"animation": "\"cima\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "personagem",
+							"sid": 452407688084562,
+							"behaviorType": "8Direções",
+							"parameters": {
+								"control": "up"
+							}
+						}
+					],
+					"sid": 274866650077570
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 962872407814512,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "personagem",
+							"sid": 233460143881370,
+							"parameters": {
+								"animation": "\"direita\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "personagem",
+							"sid": 570991570788988,
+							"behaviorType": "8Direções",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 479094907984965
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 390265421166404,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "personagem",
+							"sid": 179224946767469,
+							"parameters": {
+								"animation": "\"baixo\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "personagem",
+							"sid": 322088479375627,
+							"behaviorType": "8Direções",
+							"parameters": {
+								"control": "down"
+							}
+						}
+					],
+					"sid": 155129937554729
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 784265906276327,
+							"parameters": {
+								"variable": "amimir"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "personagem",
+							"sid": 318778806238185,
+							"parameters": {
+								"animation": "\"amimir\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "personagem",
+							"sid": 379960642664238,
+							"parameters": {
+								"x": "507",
+								"y": " 188"
+							}
+						}
+					],
+					"sid": 324036794522847
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 796209511809533,
+							"parameters": {
+								"interval-seconds": "15"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "personagem",
+							"sid": 710633149764737,
+							"parameters": {
+								"animation": "\"wave\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 831870521805337,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 988571522891527,
+							"parameters": {
+								"key": 68
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "personagem",
+							"sid": 744387398981855,
+							"disabled": true,
+							"parameters": {
+								"object": "cama"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 662596609704011,
+							"parameters": {
+								"variable": "amimir"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "personagem",
+							"sid": 755173825030122,
+							"disabled": true,
+							"parameters": {
+								"x": "553.418075",
+								"y": " 206.660746"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "personagem",
+							"sid": 797755069061033,
+							"parameters": {
+								"x": "549.868873",
+								"y": "203.405176"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 964754314112661,
+							"parameters": {
+								"variable": "amimir",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 200953083262144
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 761721172189141,
+							"parameters": {
+								"key": 65
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "personagem",
+							"sid": 512962835375614,
+							"disabled": true,
+							"parameters": {
+								"object": "cama"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 336714989049135,
+							"parameters": {
+								"variable": "amimir"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "personagem",
+							"sid": 600527146115963,
+							"disabled": true,
+							"parameters": {
+								"x": "464.418075",
+								"y": "206.660746"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "personagem",
+							"sid": 391424147010123,
+							"parameters": {
+								"x": "465.916822",
+								"y": "201.734488"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 150926871905026,
+							"parameters": {
+								"variable": "amimir",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 377564421354569
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 958725883638935,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "cama"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 692409841328494,
+							"parameters": {
+								"variable": "amimir",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 817592221203095
+				}
+			],
+			"sid": 534269456092118
+		}
+	],
+	"sid": 118657398384756
+}

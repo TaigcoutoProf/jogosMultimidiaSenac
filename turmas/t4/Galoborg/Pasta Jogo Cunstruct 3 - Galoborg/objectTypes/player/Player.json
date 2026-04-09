@@ -1,0 +1,182 @@
+{
+	"name": "Player",
+	"plugin-id": "Sprite",
+	"sid": 775231974406063,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "pontuacao",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 136382247736396
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "TileMovement",
+			"name": "MovimentoEmGrid",
+			"sid": 916962319737994
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 390263137359771
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Fixar",
+			"sid": 388013054141517
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3163170,
+						"collisionPoly": {
+							"points": [
+								0.0625,
+								0.9375,
+								0.0625,
+								0,
+								0.9375,
+								0,
+								0.9375,
+								0.9375
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "bico",
+								"x": 0.5,
+								"y": -0.0625
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1921754,
+						"collisionPoly": {
+							"points": [
+								0.0625,
+								0.9375,
+								0.0625,
+								0.0625,
+								1,
+								0.0625,
+								1,
+								0.9375
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "bico",
+								"x": 1.0625,
+								"y": 0.5
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5212979,
+						"collisionPoly": {
+							"points": [
+								0.0625,
+								1,
+								0.0625,
+								0.0625,
+								0.9375,
+								0.0625,
+								0.9375,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "bico",
+								"x": 0.5,
+								"y": 1.0625
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8278985,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.9375,
+								0,
+								0.0625,
+								0.9375,
+								0.0625,
+								0.9375,
+								0.9375
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "bico",
+								"x": -0.0625,
+								"y": 0.5
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 230497323908947,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
