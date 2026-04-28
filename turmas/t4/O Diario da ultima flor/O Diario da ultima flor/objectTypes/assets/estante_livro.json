@@ -1,0 +1,84 @@
+{
+	"name": "estante_livro",
+	"plugin-id": "Sprite",
+	"sid": 640273756797132,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persistir",
+			"sid": 184944785943446
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 65,
+						"originX": 0.5441176470588235,
+						"originY": -0.24615384615384617,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4378307,
+						"collisionPoly": {
+							"points": [
+								0.058823529411764705,
+								0,
+								0.9705882352941176,
+								0,
+								0.9117647058823529,
+								0.9846153846153847,
+								0.029411764705882353,
+								0.9384615384615385
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 34,
+						"height": 65,
+						"originX": 0.5441176470588235,
+						"originY": -0.24615384615384617,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9729651,
+						"collisionPoly": {
+							"points": [
+								0.058823529411764705,
+								0.015384615384615385,
+								0.9705882352941176,
+								0.03076923076923077,
+								0.9117647058823529,
+								0.9846153846153847,
+								0.029411764705882353,
+								0.9692307692307692
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 584294069782096,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

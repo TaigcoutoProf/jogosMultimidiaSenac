@@ -1,0 +1,58 @@
+{
+	"name": "casa",
+	"plugin-id": "Sprite",
+	"sid": 314900755544311,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 196,
+						"height": 160,
+						"originX": 0.34183673469387754,
+						"originY": 0.19375,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2397454,
+						"collisionPoly": {
+							"points": [
+								0.7091836734693877,
+								0.0125,
+								0.9948979591836735,
+								0.1125,
+								0.9948979591836735,
+								0.99375,
+								0.00510204081632653,
+								0.99375,
+								0.00510204081632653,
+								0.675,
+								0.1326530612244898,
+								0.24375,
+								0.2653061224489796,
+								0.1375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 582742993007326,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

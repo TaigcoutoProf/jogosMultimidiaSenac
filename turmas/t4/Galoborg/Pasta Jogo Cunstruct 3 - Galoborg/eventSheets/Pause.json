@@ -1,0 +1,270 @@
+{
+	"name": "Pause",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": true,
+			"title": "Pause",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 191854809574490,
+							"parameters": {
+								"key": 27
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 683047975106995,
+							"parameters": {
+								"variable": "Pause",
+								"value": "true"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 274434871900215,
+							"parameters": {
+								"variable": "paused",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 700458778255071,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 681362858777585,
+									"parameters": {
+										"variable": "paused",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 623057408537930,
+									"parameters": {
+										"time-scale": "0"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 307582752942520,
+									"parameters": {
+										"layer": "\"paused\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-interactive",
+									"objectClass": "System",
+									"sid": 957570728321314,
+									"parameters": {
+										"layer": "\"paused\"",
+										"interactive": true
+									}
+								}
+							],
+							"sid": 225767853483404,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 537769271800533,
+									"parameters": {
+										"variable": "paused",
+										"comparison": 5,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 206349413605025,
+									"parameters": {
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 755676944987984,
+									"parameters": {
+										"variable": "paused",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 186255494582437,
+									"parameters": {
+										"layer": "\"paused\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-interactive",
+									"objectClass": "System",
+									"sid": 351922274098385,
+									"parameters": {
+										"layer": "\"paused\"",
+										"interactive": false
+									}
+								}
+							],
+							"sid": 817795954109405,
+							"disabled": true
+						}
+					]
+				}
+			],
+			"sid": 610531748572791
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 765276549839135,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "botao_continue"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 378768248427199,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 636620072653755,
+					"parameters": {
+						"variable": "paused",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 115940908031360,
+					"parameters": {
+						"layer": "\"paused\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 410229424059519,
+					"parameters": {
+						"layer": "\"paused\"",
+						"interactive": false
+					}
+				}
+			],
+			"sid": 386798118390078,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 696461007956627
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 931423159964464,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "botao_reiniciar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 797469100230741,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 232425643324762,
+					"parameters": {
+						"variable": "paused",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 796390887041281,
+					"parameters": {
+						"layer": "\"paused\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 689568178279282,
+					"parameters": {
+						"layer": "\"paused\"",
+						"interactive": false
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 351629515048427
+				}
+			],
+			"sid": 534809051732410
+		}
+	],
+	"sid": 493322753145873
+}

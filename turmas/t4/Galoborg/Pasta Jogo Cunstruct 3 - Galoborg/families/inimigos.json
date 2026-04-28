@@ -1,0 +1,18 @@
+{
+	"name": "inimigos",
+	"plugin-id": "Sprite",
+	"sid": 895342905055405,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"drone_patrulheiro",
+		"drone_patrulheiro_morte",
+		"drone_perseguidor",
+		"drone_perseguidor_morte",
+		"BombaExplosao",
+		"mar_fogo",
+		"mar_fogo_explosao",
+		"Bomba"
+	]
+}

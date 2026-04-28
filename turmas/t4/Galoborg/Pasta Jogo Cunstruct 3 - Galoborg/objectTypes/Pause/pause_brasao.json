@@ -1,0 +1,93 @@
+{
+	"name": "pause_brasao",
+	"plugin-id": "Sprite",
+	"sid": 977972226561386,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1581614,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 327832284041818,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 640,
+						"height": 320,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6323931,
+						"collisionPoly": {
+							"points": [
+								0.265625,
+								0.10625,
+								0.73125,
+								0.10625,
+								0.75625,
+								0.1625,
+								0.771875,
+								0.23125,
+								0.771875,
+								0.36875,
+								0.678125,
+								0.86875,
+								0.64375,
+								0.9375,
+								0.365625,
+								0.9375,
+								0.325,
+								0.853125,
+								0.23125,
+								0.353125,
+								0.23125,
+								0.215625,
+								0.246875,
+								0.146875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 795831980472638,
+				"name": "Animação 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

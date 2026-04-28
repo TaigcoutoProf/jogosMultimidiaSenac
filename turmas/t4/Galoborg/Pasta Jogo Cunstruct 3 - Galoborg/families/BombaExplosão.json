@@ -1,0 +1,12 @@
+{
+	"name": "BombaExplosão",
+	"plugin-id": "Sprite",
+	"sid": 414842580712213,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"mar_fogo",
+		"mar_fogo_explosao"
+	]
+}

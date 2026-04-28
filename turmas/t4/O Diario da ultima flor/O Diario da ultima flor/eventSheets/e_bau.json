@@ -1,0 +1,48 @@
+{
+	"name": "e_bau",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Toque",
+					"sid": 693533639925957,
+					"parameters": {
+						"object": "botão"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 495493698508142,
+					"parameters": {
+						"variable": "bau_aberto",
+						"value": "true"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 705882925309759,
+					"parameters": {
+						"variable": "qtd_eventos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 954089891718688,
+					"parameters": {
+						"layout": "BaseJogo"
+					}
+				}
+			],
+			"sid": 456240450443888
+		}
+	],
+	"sid": 790521104759647
+}

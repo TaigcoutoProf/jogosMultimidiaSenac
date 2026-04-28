@@ -1,0 +1,58 @@
+{
+	"name": "luz",
+	"plugin-id": "Sprite",
+	"sid": 935157323783137,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 28,
+						"originX": 0.54,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8032524,
+						"collisionPoly": {
+							"points": [
+								0.32,
+								0.39285714285714285,
+								0.56,
+								0.39285714285714285,
+								0.64,
+								0.42857142857142855,
+								0.64,
+								0.5714285714285714,
+								0.56,
+								0.6785714285714286,
+								0.4,
+								0.6785714285714286,
+								0.32,
+								0.6071428571428571
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 162825494551617,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

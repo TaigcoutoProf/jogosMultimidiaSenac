@@ -1,0 +1,42 @@
+{
+	"name": "e_agradecimento",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Toque",
+					"sid": 684307406681721,
+					"parameters": {
+						"object": "voltar_menu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 653421662916899,
+					"parameters": {
+						"layout": "Menu Principal"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 908742425792381,
+					"parameters": {
+						"audio-file": "Menuselecao2",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"menu\""
+					}
+				}
+			],
+			"sid": 879805941343273
+		}
+	],
+	"sid": 938415769890084
+}

@@ -1,0 +1,63 @@
+{
+	"name": "Caixa",
+	"plugin-id": "Sprite",
+	"sid": 531321449953616,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "TileMovement",
+			"name": "MovimentoEmGrid",
+			"sid": 390980864511449
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 377885944200672
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5039189,
+						"collisionPoly": {
+							"points": [
+								0.0625,
+								0.0625,
+								0.9375,
+								0.0625,
+								0.9375,
+								0.9375,
+								0.0625,
+								0.9375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 498545698283787,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

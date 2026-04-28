@@ -1,0 +1,58 @@
+{
+	"name": "platsurgir",
+	"plugin-id": "Sprite",
+	"sid": 488049736513554,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "jumpthru",
+			"name": "PularAtravés",
+			"sid": 368541833012822
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 47,
+						"height": 14,
+						"originX": 0.48936170212765956,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1929543,
+						"collisionPoly": {
+							"points": [
+								0.9494680851063834,
+								0.20535714285714274,
+								0.9494680851063834,
+								0.7767857142857143,
+								0.04521276595744679,
+								0.7678571428571428,
+								0.0425531914893617,
+								0.21428571428571427
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 938065785789116,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

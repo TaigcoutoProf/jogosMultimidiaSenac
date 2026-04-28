@@ -1,0 +1,346 @@
+{
+	"name": "transicao",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 430631752912970
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "bloco",
+					"sid": 355812868618620,
+					"parameters": {
+						"animation": "\"fim\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "bloco",
+					"sid": 626082513261405,
+					"parameters": {
+						"speed": "0"
+					}
+				}
+			],
+			"sid": 182748786665689,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-ordered",
+							"objectClass": "System",
+							"sid": 310718582179202,
+							"parameters": {
+								"object": "bloco",
+								"expression": "bloco.id",
+								"order": "ascending"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 769780196312006,
+							"parameters": {
+								"seconds": "0.003 * loopindex + 0.2",
+								"use-timescale": false
+							}
+						},
+						{
+							"id": "set-animation-speed",
+							"objectClass": "bloco",
+							"sid": 938542006101031,
+							"parameters": {
+								"speed": "16"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 983033655604419,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": false
+							}
+						}
+					],
+					"sid": 292264241880356
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-time",
+					"objectClass": "System",
+					"sid": 863985867337559,
+					"parameters": {
+						"comparison": 0,
+						"time-seconds": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "bloco",
+					"sid": 603014719523764,
+					"parameters": {
+						"animation": "\"comeco\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "bloco",
+					"sid": 434317445105395,
+					"parameters": {
+						"speed": "0"
+					}
+				}
+			],
+			"sid": 809977788138322,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-ordered",
+							"objectClass": "System",
+							"sid": 804782351349692,
+							"parameters": {
+								"object": "bloco",
+								"expression": "bloco.id",
+								"order": "ascending"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 742033315793483,
+							"parameters": {
+								"seconds": "0.003 * loopindex + 0.2",
+								"use-timescale": false
+							}
+						},
+						{
+							"id": "set-animation-speed",
+							"objectClass": "bloco",
+							"sid": 532837736059714,
+							"parameters": {
+								"speed": "16"
+							}
+						}
+					],
+					"sid": 711757813064487
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 196708514453586,
+					"parameters": {
+						"seconds": "2.5",
+						"use-timescale": false
+					}
+				}
+			],
+			"sid": 966145988521320,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 306033689203257,
+							"parameters": {
+								"layout": "fase1"
+							}
+						}
+					],
+					"sid": 200621541010979
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 347765889045790,
+							"parameters": {
+								"layout": "fase2"
+							}
+						}
+					],
+					"sid": 242637987525559,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 386076722061318,
+							"parameters": {
+								"layout": "fase3"
+							}
+						}
+					],
+					"sid": 405644537143840,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 597867823791163,
+							"parameters": {
+								"layout": "fase4"
+							}
+						}
+					],
+					"sid": 678382745650515,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 528667181874192,
+							"parameters": {
+								"layout": "fase5"
+							}
+						}
+					],
+					"sid": 694447853865190,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 443573223669987,
+							"parameters": {
+								"layout": "Parabens"
+							}
+						}
+					],
+					"sid": 470972553602978,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 926522912155493,
+							"parameters": {
+								"first-value": "LayoutName",
+								"comparison": 0,
+								"second-value": "\"start\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 647187517579728,
+							"parameters": {
+								"layout": "fase1"
+							}
+						}
+					],
+					"sid": 968175329099822,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 669028010025405,
+							"parameters": {
+								"first-value": "LayoutName",
+								"comparison": 0,
+								"second-value": "\"fase1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 199111913346469,
+							"parameters": {
+								"layout": "fase2"
+							}
+						}
+					],
+					"sid": 612962314122972,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "bloco",
+					"sid": 376350179037101,
+					"parameters": {
+						"comparison": 0,
+						"number": "bloco.id=1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 245518198642843,
+					"parameters": {
+						"layout": "fase1"
+					}
+				}
+			],
+			"sid": 205918335140382,
+			"disabled": true
+		}
+	],
+	"sid": 782633242537073
+}

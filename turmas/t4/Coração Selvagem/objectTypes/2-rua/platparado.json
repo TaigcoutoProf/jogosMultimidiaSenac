@@ -1,0 +1,52 @@
+{
+	"name": "platparado",
+	"plugin-id": "Sprite",
+	"sid": 771931979723944,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 47,
+						"height": 14,
+						"originX": 0.48936170212765956,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7565156,
+						"collisionPoly": {
+							"points": [
+								0.9601063829787235,
+								0.2053571428571428,
+								0.9574468085106383,
+								0.7857142857142857,
+								0.03989361702127659,
+								0.7946428571428569,
+								0.0425531914893617,
+								0.21428571428571427
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 272544730088407,
+				"name": "Animação 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

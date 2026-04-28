@@ -1,0 +1,520 @@
+{
+	"name": "fase1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "MonstroComportamento"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Player"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Tempo"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Vida&GameOver"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Caixa"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 294031248425417
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 599357096693495,
+					"parameters": {
+						"audio-file": "judgment_fase1",
+						"loop": "looping",
+						"volume": "-25",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 667621422913786,
+					"parameters": {
+						"variable": "tempo",
+						"value": "300"
+					}
+				}
+			],
+			"sid": 634236343828508
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 563867918136404
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 560138130691894,
+					"parameters": {
+						"variable": "Moeda",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 857385336993720
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 276712358012368
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Saida",
+					"sid": 106692394252964,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 154256713444401
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 685191675246829,
+					"parameters": {
+						"variable": "Moeda",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Saida",
+					"sid": 270107046428498,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 547141907705822
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "galoborg",
+					"sid": 552930072643976,
+					"parameters": {
+						"object": "Saida",
+						"offset-x": "0",
+						"offset-y": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 777671272047255,
+					"parameters": {
+						"variable": "Moeda",
+						"comparison": 5,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 873628787172454,
+					"parameters": {
+						"layout": "fase2"
+					}
+				}
+			],
+			"sid": 672420398060568
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "tutorial",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 301425149004074
+		},
+		{
+			"eventType": "group",
+			"disabled": true,
+			"title": "Pause2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 194813600654755
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 517842195677179,
+							"parameters": {
+								"variable": "Pause",
+								"value": "true"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 457424546124698,
+							"parameters": {
+								"variable": "paused",
+								"value": "1"
+							}
+						},
+						{
+							"id": "stop-animation",
+							"objectClass": "botao_continue",
+							"sid": 621805181438283
+						}
+					],
+					"sid": 172594494307677,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 262400075671202,
+									"parameters": {
+										"variable": "paused",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 937326695604954,
+									"parameters": {
+										"time-scale": "0"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 311845570109257,
+									"parameters": {
+										"layer": "\"paused\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-interactive",
+									"objectClass": "System",
+									"sid": 877314981608448,
+									"parameters": {
+										"layer": "\"paused\"",
+										"interactive": true
+									}
+								}
+							],
+							"sid": 671452155577447,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 514872464248326,
+									"parameters": {
+										"variable": "paused",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 813909209120355,
+									"parameters": {
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 347429700325926,
+									"parameters": {
+										"variable": "paused",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 746507692941202,
+									"parameters": {
+										"layer": "\"paused\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-interactive",
+									"objectClass": "System",
+									"sid": 587431372495364,
+									"parameters": {
+										"layer": "\"paused\"",
+										"interactive": false
+									}
+								}
+							],
+							"sid": 594324849237128,
+							"disabled": true
+						}
+					]
+				}
+			],
+			"sid": 127936951916252
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 363198257310814
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 485110281465395,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "botao_reiniciar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 636584448329534,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 728167745904692,
+					"parameters": {
+						"variable": "paused",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 759073145515282,
+					"parameters": {
+						"layer": "\"paused\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 789061211139135,
+					"parameters": {
+						"layer": "\"paused\"",
+						"interactive": false
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 222789166631761
+				}
+			],
+			"sid": 591075527823755,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 499237506975785
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 842262030529133,
+					"parameters": {
+						"time-scale": "0"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 293548261102220,
+					"parameters": {
+						"layer": "8",
+						"interactive": true
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 123876319308362,
+					"parameters": {
+						"layer": "8",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 321943774982048
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 534844062742971,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "botao_continue"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 443488408448705,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "botao_continue",
+					"sid": 860687367489724,
+					"parameters": {
+						"animation": "\"Animação 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 761890763505391,
+					"parameters": {
+						"audio-file": "botao",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 999841587066221,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 230091372574967,
+					"parameters": {
+						"layer": "\"paused\"",
+						"interactive": false
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 489293116942313,
+					"disabled": true,
+					"parameters": {
+						"variable": "paused",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 823461078438420,
+					"parameters": {
+						"layer": "\"paused\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 606016758869189,
+					"disabled": true,
+					"parameters": {
+						"group-name": "\"Pause2\"",
+						"state": "deactivated"
+					}
+				}
+			],
+			"sid": 306460959584048
+		}
+	],
+	"sid": 340407804266383
+}

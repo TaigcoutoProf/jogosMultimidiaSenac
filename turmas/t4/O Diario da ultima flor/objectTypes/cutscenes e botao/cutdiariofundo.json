@@ -1,0 +1,56 @@
+{
+	"name": "cutdiariofundo",
+	"plugin-id": "Sprite",
+	"sid": 193836981950023,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 369,
+						"height": 166,
+						"originX": 0.9796747967479674,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3154200,
+						"collisionPoly": {
+							"points": [
+								0.11653116531165311,
+								0.012048192771084338,
+								0.5609756097560976,
+								0.012048192771084338,
+								1,
+								0.1566265060240964,
+								1,
+								0.9939759036144579,
+								0.0027100271002710027,
+								0.9759036144578314,
+								0.013550135501355014,
+								0.13253012048192772
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 554515986261520,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

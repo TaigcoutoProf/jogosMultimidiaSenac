@@ -1,0 +1,820 @@
+{
+	"name": "f-rua1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "moeda",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 816724732711884
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "f-player"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "f-pisoCAI"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 927117481569676
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "moeda1",
+					"sid": 634783377343517,
+					"parameters": {
+						"instance-variable": "pega"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "moeda1",
+					"sid": 669695973371799,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 560721139840454
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-button-pressed",
+					"objectClass": "Gamepad",
+					"sid": 546373098202465,
+					"parameters": {
+						"gamepad": "0",
+						"button": "button-y"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 952532528103134,
+					"parameters": {
+						"object": "sensorRua1"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 850678324115415,
+					"parameters": {
+						"variable": "Pegouchave"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 992918169492201,
+					"parameters": {
+						"layout": "Quarto"
+					}
+				}
+			],
+			"sid": 242016367619807
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Interações com Teclado",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 490129249478347,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 777277655200359,
+							"parameters": {
+								"object": "sensorRua1"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 675974538836265,
+							"parameters": {
+								"variable": "Pegouchave"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 813412351070156,
+							"parameters": {
+								"layout": "Quarto"
+							}
+						}
+					],
+					"sid": 840646354040141
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 797468584116705,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 511126081443635,
+							"parameters": {
+								"key": 81
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 936595042572924,
+							"parameters": {
+								"object": "alavanca"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "plat",
+							"sid": 883187520981551,
+							"parameters": {
+								"comparison": 3,
+								"y-co-ordinate": "552"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "alavanca",
+							"sid": 610267847016966,
+							"parameters": {
+								"animation": "\"subir\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 608114585524037,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 913869687884015
+								}
+							],
+							"actions": [
+								{
+									"id": "set-y",
+									"objectClass": "plat",
+									"sid": 728128275336484,
+									"parameters": {
+										"y": "Self.Y+2"
+									}
+								}
+							],
+							"sid": 670282987394119
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 458984182369797,
+							"parameters": {
+								"key": 81
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 825338211687191,
+							"parameters": {
+								"key": 69
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 950830403967483,
+							"parameters": {
+								"object": "alavanca"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "plat",
+							"sid": 398650539468034,
+							"parameters": {
+								"comparison": 5,
+								"y-co-ordinate": "391"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "alavanca",
+							"sid": 669550372433144,
+							"parameters": {
+								"animation": "\"decer\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 102456820967516,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 501805642510994
+								}
+							],
+							"actions": [
+								{
+									"id": "set-y",
+									"objectClass": "plat",
+									"sid": 705063546225411,
+									"parameters": {
+										"y": "Self.Y-2"
+									}
+								}
+							],
+							"sid": 837070845158612
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 444914412550331,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 211903167301789,
+							"parameters": {
+								"object": "seuManoel"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Falamanoel",
+							"sid": 536010577816112,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "Falamanoel",
+							"sid": 333500297352952,
+							"parameters": {
+								"text": "\"Boas menino, o que estas a acontecer aqui ora pois? Acho que o Blibiotecário podes saber.\"",
+								"duration": "2.75"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 123165823469342,
+							"parameters": {
+								"seconds": "6.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Falamanoel",
+							"sid": 849874355124423,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 125049712252961
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 698025939974153,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 677826610860021,
+							"parameters": {
+								"object": "seuManoel"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "balaomanoel",
+							"sid": 857698734485609,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 787157501024657,
+							"parameters": {
+								"seconds": "6.3",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "balaomanoel",
+							"sid": 534199353800542,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 610499147955826
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 531675017989369,
+							"parameters": {
+								"object": "seuManoel"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "emanuel",
+							"sid": 634496690168804,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 755114160104281
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 765794150848689,
+							"parameters": {
+								"object": "seuManoel"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "emanuel",
+							"sid": 353333436909655,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 519264002677471
+				}
+			],
+			"sid": 646283706920172
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Interações com Teclado (controle)",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 851731446830111,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-y"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 832144976502400,
+							"parameters": {
+								"object": "sensorRua1"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 746091644173062,
+							"parameters": {
+								"variable": "Pegouchave"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 448140827557970,
+							"parameters": {
+								"layout": "Quarto"
+							}
+						}
+					],
+					"sid": 206798231055485
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-button-down",
+							"objectClass": "Gamepad",
+							"sid": 714981579512150,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-y"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 665849294546927,
+							"parameters": {
+								"object": "alavanca"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "plat",
+							"sid": 153357894462800,
+							"parameters": {
+								"comparison": 3,
+								"y-co-ordinate": "552"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 386116167306398,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 303351156255852
+								}
+							],
+							"actions": [
+								{
+									"id": "set-y",
+									"objectClass": "plat",
+									"sid": 682657803781452,
+									"parameters": {
+										"y": "Self.Y+2"
+									}
+								}
+							],
+							"sid": 138959576288022
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-button-down",
+							"objectClass": "Gamepad",
+							"sid": 968819302965143,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-b"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 703949696736948,
+							"parameters": {
+								"object": "alavanca"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "plat",
+							"sid": 192484103941207,
+							"parameters": {
+								"comparison": 5,
+								"y-co-ordinate": "391"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 654590202834644,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 638474163807335
+								}
+							],
+							"actions": [
+								{
+									"id": "set-y",
+									"objectClass": "plat",
+									"sid": 492507019972227,
+									"parameters": {
+										"y": "Self.Y-2"
+									}
+								}
+							],
+							"sid": 453813991284852
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 893797811709159,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-y"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 771334785145957,
+							"parameters": {
+								"object": "seuManoel"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Falamanoel",
+							"sid": 568196268892846,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "Falamanoel",
+							"sid": 812148128800575,
+							"parameters": {
+								"text": "\"Boas menino, o que esta acontecendo com aqui?Acho que o Blibiotecário pode saber.\"",
+								"duration": "2.75"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 367894083920035,
+							"parameters": {
+								"seconds": "7.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Falamanoel",
+							"sid": 166694911862169,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 727752145991691
+				}
+			],
+			"sid": 116598998698542
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 323730162013764,
+					"parameters": {
+						"object": "entradabiblioteca"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 850147486917237,
+					"parameters": {
+						"layout": "bliblioteca"
+					}
+				}
+			],
+			"sid": 764570636390701
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 936944184731465
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "alavanca",
+					"sid": 233018123956004
+				}
+			],
+			"sid": 896225672700058
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 987340941342660,
+					"parameters": {
+						"object": "totemsaveplat"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "totemsaveplat",
+					"sid": 640907705285850,
+					"parameters": {
+						"animation": "\"ligado\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 786933996568989,
+					"parameters": {
+						"seconds": "2.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "totemsaveplat",
+					"sid": 354879863253864,
+					"parameters": {
+						"animation": "\"infinito\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 438490263315128
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 587728969453773,
+					"parameters": {
+						"object": "alavanca"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "qalavanca",
+					"sid": 470091406640977,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ealavanca",
+					"sid": 128131480728931,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 792586419372847
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 950341675593861,
+					"parameters": {
+						"object": "alavanca"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "qalavanca",
+					"sid": 818086329433238,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ealavanca",
+					"sid": 215092280048697,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 344393855340849
+		}
+	],
+	"sid": 193455103110066
+}

@@ -1,0 +1,52 @@
+{
+	"name": "escada",
+	"plugin-id": "Sprite",
+	"sid": 854278736123570,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 93,
+						"height": 38,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8212662,
+						"collisionPoly": {
+							"points": [
+								0.010752688172043012,
+								0.02631578947368421,
+								0.989247311827957,
+								0.02631578947368421,
+								0.989247311827957,
+								0.9736842105263158,
+								0.010752688172043012,
+								0.9736842105263158
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 149230122384492,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

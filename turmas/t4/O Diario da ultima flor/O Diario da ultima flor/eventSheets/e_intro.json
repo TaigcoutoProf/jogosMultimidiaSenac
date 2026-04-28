@@ -1,0 +1,253 @@
+{
+	"name": "e_intro",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "page",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 377949122070395
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 487440588768523,
+					"parameters": {
+						"object": "Sprite6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-animation",
+					"objectClass": "Sprite6",
+					"sid": 903861094321067,
+					"parameters": {
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 449753469607084
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Sprite6",
+					"sid": 719870648650548,
+					"parameters": {
+						"comparison": 0,
+						"number": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 837321487063475,
+					"parameters": {
+						"variable": "page",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Sprite6",
+					"sid": 588973720847452
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 945525335475815,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite7",
+					"sid": 607866129932678,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 119003309418370
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 839289678709033,
+					"parameters": {
+						"object": "Sprite10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 435219458661973,
+					"parameters": {
+						"variable": "page",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 544382705890461,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite7",
+					"sid": 289934556143355,
+					"disabled": true,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "Sprite6",
+					"sid": 276914598598104,
+					"parameters": {
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 177349125597060
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Sprite6",
+					"sid": 814147105252849,
+					"parameters": {
+						"comparison": 0,
+						"number": "4"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 150768702741393,
+					"parameters": {
+						"variable": "page",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Sprite6",
+					"sid": 917668897156230
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 172249850236368,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite8",
+					"sid": 194570293989285,
+					"disabled": true,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 132957180768455
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Sprite6",
+					"sid": 820745857111510,
+					"parameters": {
+						"comparison": 0,
+						"number": "6"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 824710608947105,
+					"parameters": {
+						"variable": "page",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Sprite6",
+					"sid": 951355209805601
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 542320948454374,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 532530158624768
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 578378780512223,
+					"parameters": {
+						"variable": "page",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 686335338099459,
+					"parameters": {
+						"layout": "BaseJogo"
+					}
+				}
+			],
+			"sid": 457327157191809
+		}
+	],
+	"sid": 717161827325093
+}

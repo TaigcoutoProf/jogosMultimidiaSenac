@@ -1,0 +1,58 @@
+{
+	"name": "CanhaoE",
+	"plugin-id": "Sprite",
+	"sid": 346247548281926,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Turret",
+			"name": "Canhão",
+			"sid": 282471900631124
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 651983923779501
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 8,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9285088,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Ponto de Imagem 1",
+								"x": 0.5,
+								"y": 1.03125
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 211784374866674,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

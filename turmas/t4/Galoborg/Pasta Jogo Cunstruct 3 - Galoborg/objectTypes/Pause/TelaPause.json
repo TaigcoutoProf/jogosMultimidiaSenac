@@ -1,0 +1,68 @@
+{
+	"name": "TelaPause",
+	"plugin-id": "Sprite",
+	"sid": 933833976800767,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 348,
+						"height": 268,
+						"originX": 0.49184172281675254,
+						"originY": 0.44269325016707506,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9709341,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0.059534417464914245,
+								1,
+								0.2555691690799733,
+								1,
+								0.9684228113165516,
+								0.9780354075835646,
+								1,
+								0.03735632183908046,
+								1,
+								0,
+								0.9461461349966586,
+								0,
+								0.23329249276008016,
+								0,
+								0.03725774114502115,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 176399702056890,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

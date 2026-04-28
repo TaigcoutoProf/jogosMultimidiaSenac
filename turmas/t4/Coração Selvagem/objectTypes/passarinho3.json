@@ -1,0 +1,104 @@
+{
+	"name": "passarinho3",
+	"plugin-id": "Sprite",
+	"sid": 332063336501147,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Senóide",
+			"sid": 868183602302356
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 964970,
+						"collisionPoly": {
+							"points": [
+								0.34375,
+								0.34375,
+								0.625,
+								0.34375,
+								0.65625,
+								0.375,
+								0.65625,
+								0.4375,
+								0.59375,
+								0.53125,
+								0.53125,
+								0.59375,
+								0.40625,
+								0.59375,
+								0.3125,
+								0.5,
+								0.3125,
+								0.375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8774363,
+						"collisionPoly": {
+							"points": [
+								0.4375,
+								0.34375,
+								0.53125,
+								0.34375,
+								0.625,
+								0.40625,
+								0.65625,
+								0.46875,
+								0.53125,
+								0.59375,
+								0.40625,
+								0.59375,
+								0.3125,
+								0.5,
+								0.3125,
+								0.4375,
+								0.34375,
+								0.40625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 585463430758234,
+				"name": "Animação 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

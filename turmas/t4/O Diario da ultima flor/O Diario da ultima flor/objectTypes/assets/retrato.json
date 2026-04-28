@@ -1,0 +1,52 @@
+{
+	"name": "retrato",
+	"plugin-id": "Sprite",
+	"sid": 202035054211024,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 13,
+						"height": 10,
+						"originX": 0.46153846153846156,
+						"originY": 0.45,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3637930,
+						"collisionPoly": {
+							"points": [
+								0.07692307692307693,
+								0.1,
+								0.9230769230769231,
+								0.1,
+								0.9230769230769231,
+								0.9,
+								0.07692307692307693,
+								0.9
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 542453264352269,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

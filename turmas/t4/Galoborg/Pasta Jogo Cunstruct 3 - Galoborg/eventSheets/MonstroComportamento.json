@@ -1,0 +1,1122 @@
+{
+	"name": "MonstroComportamento",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 430792134873532
+				}
+			],
+			"actions": [
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 181506711661128,
+					"parameters": {
+						"group-name": "\"localizou\"",
+						"state": "deactivated"
+					}
+				}
+			],
+			"sid": 931197965631509
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 909162205547646,
+					"parameters": {
+						"variable": "barra_hp",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 554712793347061,
+					"parameters": {
+						"variable": "vida_extra",
+						"comparison": 0,
+						"value": "-1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 283301393277583,
+					"parameters": {
+						"layout": "game_over"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "barra_hp",
+					"sid": 382301548206458,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 148966766443634
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MonstroPatrulheiro",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 527707537345735
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "drone_patrulheiro",
+							"sid": 514036907353307,
+							"parameters": {
+								"animation": "\"Base\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 162972889617666
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "drone_patrulheiro",
+							"sid": 778054446270404
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "drone_patrulheiro",
+							"sid": 193828583979637,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"value": "choose(0,1,2,3)"
+							}
+						}
+					],
+					"sid": 948277568634441
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 108988023432065,
+							"parameters": {
+								"interval-seconds": "0.5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "drone_patrulheiro",
+							"sid": 443178021842296,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"value": "choose(0,1,2,3)"
+							}
+						}
+					],
+					"sid": 498223348547185
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "drone_patrulheiro",
+							"sid": 495706282930385,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "drone_patrulheiro",
+							"sid": 323833231318986,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "up"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "drone_patrulheiro",
+							"sid": 684032386371468,
+							"parameters": {
+								"animation": "\"base_cima\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 261081353042667
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "drone_patrulheiro",
+							"sid": 567120468033467,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "drone_patrulheiro",
+							"sid": 175363945401279,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "drone_patrulheiro",
+							"sid": 613126214193993,
+							"parameters": {
+								"animation": "\"base_direita\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 494504513868625
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "drone_patrulheiro",
+							"sid": 393466660393952,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "drone_patrulheiro",
+							"sid": 347298537213510,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "down"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "drone_patrulheiro",
+							"sid": 622626709267522,
+							"parameters": {
+								"animation": "\"base_baixo\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 410549548200880
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "drone_patrulheiro",
+							"sid": 625676562673080,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "drone_patrulheiro",
+							"sid": 372044488165800,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "drone_patrulheiro",
+							"sid": 293812719938477,
+							"parameters": {
+								"animation": "\"base_esquerda\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 589992345548742
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "inimigos",
+							"sid": 454203950332455,
+							"parameters": {
+								"object": "Hitbox",
+								"offset-x": "0",
+								"offset-y": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 946532242226659
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 509276016892548,
+							"parameters": {
+								"variable": "barra_hp",
+								"value": "1"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 904990490163319,
+							"parameters": {
+								"variable": "contador_vida",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 337936017337607,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 418361976204878,
+									"parameters": {
+										"variable": "contador_vida",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "barra_hp",
+									"sid": 387708706547533,
+									"parameters": {
+										"frame-number": "2"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 164772436229812,
+									"parameters": {
+										"variable": "contador_vida",
+										"value": "3"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 442685481220587,
+									"parameters": {
+										"variable": "barra_hp",
+										"value": "3"
+									}
+								},
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 993197961158801,
+									"parameters": {
+										"variable": "vida_extra",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 272614817047644
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "inimigos",
+							"sid": 823435427671810,
+							"parameters": {
+								"object": "Hitbox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 926692152962424,
+							"parameters": {
+								"audio-file": "dano",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 234629800448578,
+							"parameters": {
+								"variable": "invencibilidade"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "galoborg",
+							"sid": 881292584684956,
+							"behaviorType": "Senóide",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Hitbox",
+							"sid": 276560384737624
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 118310174138659,
+							"parameters": {
+								"seconds": "3",
+								"use-timescale": false
+							}
+						},
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 684751173508967,
+							"parameters": {
+								"variable": "invencibilidade"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 188969485915726,
+							"parameters": {
+								"object-to-create": "Hitbox",
+								"layer": "\"player\"",
+								"x": "Player.ImagePointX(0)\r\n",
+								"y": "Player.ImagePointY(0)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "Hitbox",
+							"sid": 591368655640970,
+							"behaviorType": "Fixar",
+							"parameters": {
+								"pin-to": "Player",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-cycle-position",
+							"objectClass": "galoborg",
+							"sid": 483403023679704,
+							"behaviorType": "Senóide",
+							"parameters": {
+								"cycle-position": "0.25"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "galoborg",
+							"sid": 790680941371706,
+							"behaviorType": "Senóide",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-solid-collision-filter",
+							"objectClass": "Hitbox",
+							"sid": 927233948693089,
+							"parameters": {
+								"mode": "inclusive",
+								"tags": "\"Monstro\""
+							}
+						}
+					],
+					"sid": 579940836376888
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 605419044459598
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 274911292664805
+						}
+					],
+					"actions": [
+						{
+							"id": "set-solid-collision-filter",
+							"objectClass": "drone_patrulheiro",
+							"sid": 882258674917188,
+							"parameters": {
+								"mode": "exclusive",
+								"tags": "\"Player\""
+							}
+						},
+						{
+							"id": "set-solid-collision-filter",
+							"objectClass": "drone_perseguidor",
+							"sid": 825465201843885,
+							"parameters": {
+								"mode": "exclusive",
+								"tags": "\"Player\""
+							}
+						}
+					],
+					"sid": 539215435072962
+				}
+			],
+			"sid": 711136759414431
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "perseguidor",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 871654418845480
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "drone_perseguidor",
+							"sid": 936428375928209,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 172713800828152
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "drone_perseguidor",
+							"sid": 268932560825771
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "drone_perseguidor",
+							"sid": 798600828302860,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"value": "choose(0,1,2,3)"
+							}
+						}
+					],
+					"sid": 369180691559247
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 820415664485613,
+							"parameters": {
+								"interval-seconds": "0.5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "drone_perseguidor",
+							"sid": 603931088555165,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"value": "choose(0,1,2,3)"
+							}
+						}
+					],
+					"sid": 379099321576796
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "drone_perseguidor",
+							"sid": 568550027164808,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "drone_perseguidor",
+							"sid": 316891460063106,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "up"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "drone_perseguidor",
+							"sid": 315888616698621,
+							"parameters": {
+								"animation": "\"base_cima\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 490120444653131
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "drone_perseguidor",
+							"sid": 502823804236042,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "drone_perseguidor",
+							"sid": 801526301705093,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "drone_perseguidor",
+							"sid": 885294749375821,
+							"parameters": {
+								"animation": "\"base_direita\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 653585653933189
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "drone_perseguidor",
+							"sid": 878622122579767,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "drone_perseguidor",
+							"sid": 977627290302150,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "down"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "drone_perseguidor",
+							"sid": 711611135884344,
+							"parameters": {
+								"animation": "\"base_baixo\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 925976779323432
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "drone_perseguidor",
+							"sid": 282580602742609,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "drone_perseguidor",
+							"sid": 840950182630979,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "drone_perseguidor",
+							"sid": 879836366790036,
+							"parameters": {
+								"animation": "\"base_esquerda\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 371363166808567
+				}
+			],
+			"sid": 743201383763913
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 112232106121257
+				}
+			],
+			"actions": [
+				{
+					"id": "add-obstacle",
+					"objectClass": "drone_perseguidor",
+					"sid": 627448236199767,
+					"behaviorType": "ExploradorDeRotas",
+					"parameters": {
+						"obstacle": "32_caixa"
+					}
+				},
+				{
+					"id": "add-obstacle",
+					"objectClass": "drone_perseguidor",
+					"sid": 771929677104490,
+					"behaviorType": "ExploradorDeRotas",
+					"parameters": {
+						"obstacle": "obstaculos_concreto"
+					}
+				},
+				{
+					"id": "add-obstacle",
+					"objectClass": "drone_perseguidor",
+					"sid": 562720872621194,
+					"behaviorType": "ExploradorDeRotas",
+					"parameters": {
+						"obstacle": "32_Parede"
+					}
+				},
+				{
+					"id": "regenerate-obstacle-map",
+					"objectClass": "drone_perseguidor",
+					"sid": 978830725872287,
+					"behaviorType": "ExploradorDeRotas"
+				}
+			],
+			"sid": 579564390304611,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "drone_perseguidor",
+					"sid": 422060955365072,
+					"behaviorType": "CampoDeVisão",
+					"parameters": {
+						"object": "galoborg",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 535303151945107,
+					"parameters": {
+						"group-name": "\"localizou\"",
+						"state": "activated"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "drone_perseguidor",
+					"sid": 856790096111477,
+					"parameters": {
+						"animation": "\"localizou\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 519574832106785,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "drone_perseguidor",
+							"sid": 161908492280114,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "drone_perseguidor",
+							"sid": 495066142758152,
+							"disabled": true,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "up"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "drone_perseguidor",
+							"sid": 413583072830670,
+							"parameters": {
+								"animation": "\"localizou_baixo\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 241371631714310
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "drone_perseguidor",
+							"sid": 401845703836154,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "drone_perseguidor",
+							"sid": 886955841800568,
+							"disabled": true,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "drone_perseguidor",
+							"sid": 173918059846891,
+							"parameters": {
+								"animation": "\"localizou_direita\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 515394808769769
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "drone_perseguidor",
+							"sid": 491985794693266,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "drone_perseguidor",
+							"sid": 674888282970365,
+							"disabled": true,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "down"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "drone_perseguidor",
+							"sid": 490648797738922,
+							"parameters": {
+								"animation": "\"localizou_baixo\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 757594613731141
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "drone_perseguidor",
+							"sid": 472365225044355,
+							"parameters": {
+								"instance-variable": "Movimento",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "drone_perseguidor",
+							"sid": 393791555984817,
+							"disabled": true,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "drone_perseguidor",
+							"sid": 801836093985157,
+							"parameters": {
+								"animation": "\"localizou_esquerda\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 896319224297625
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "drone_perseguidor",
+					"sid": 542975605770376,
+					"behaviorType": "CampoDeVisão",
+					"parameters": {
+						"object": "galoborg",
+						"image-point": "0"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 508638163269459,
+					"parameters": {
+						"group-name": "\"localizou\"",
+						"state": "activated"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "drone_perseguidor",
+					"sid": 329764174589877,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 464166062844425
+		},
+		{
+			"eventType": "group",
+			"disabled": true,
+			"title": "localizou",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 334466070121626,
+							"parameters": {
+								"interval-seconds": "0.5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "drone_perseguidor",
+							"sid": 168436575809990,
+							"behaviorType": "ExploradorDeRotas",
+							"parameters": {
+								"x": "Hitbox.X",
+								"y": "Hitbox.Y"
+							}
+						}
+					],
+					"sid": 694917337254631,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "drone_perseguidor",
+							"sid": 491102352034948,
+							"behaviorType": "ExploradorDeRotas"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "drone_perseguidor",
+							"sid": 426222983420677,
+							"behaviorType": "ExploradorDeRotas"
+						}
+					],
+					"sid": 758603598857513,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "drone_perseguidor",
+							"sid": 292422651799235,
+							"behaviorType": "ExploradorDeRotas"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "drone_perseguidor",
+							"sid": 940265956453943,
+							"behaviorType": "ExploradorDeRotas"
+						}
+					],
+					"sid": 512790402427134,
+					"disabled": true
+				}
+			],
+			"sid": 813978677038520
+		}
+	],
+	"sid": 667558741252460
+}

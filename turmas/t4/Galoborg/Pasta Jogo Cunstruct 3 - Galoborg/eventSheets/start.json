@@ -1,0 +1,98 @@
+{
+	"name": "start",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 622251316088734
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "botao_comeco",
+					"sid": 492334346036761
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 568683830270694,
+					"parameters": {
+						"audio-file": "intro",
+						"loop": "looping",
+						"volume": "50",
+						"stereo-pan": "0",
+						"tag-optional": "\"intro\""
+					}
+				}
+			],
+			"sid": 931672031814154
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 242381386143423,
+					"parameters": {
+						"object": "botao_comeco"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "botao_comeco",
+					"sid": 246638381537220,
+					"parameters": {
+						"animation": "\"comeco\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 975859868994524,
+					"parameters": {
+						"audio-file": "botao",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 162006183515687,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Áudio",
+					"sid": 955440825655129,
+					"parameters": {
+						"tag": "\"intro\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 513232799117800,
+					"parameters": {
+						"layout": "transicao"
+					}
+				}
+			],
+			"sid": 719745053436909
+		}
+	],
+	"sid": 815071364958743
+}

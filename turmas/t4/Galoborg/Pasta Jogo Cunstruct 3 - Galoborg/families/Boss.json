@@ -1,0 +1,16 @@
+{
+	"name": "Boss",
+	"plugin-id": "Sprite",
+	"sid": 103348488032619,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"boss_torreta",
+		"Boss1",
+		"CanhaoD",
+		"CanhaoE",
+		"canhao",
+		"mar_de_fogo"
+	]
+}

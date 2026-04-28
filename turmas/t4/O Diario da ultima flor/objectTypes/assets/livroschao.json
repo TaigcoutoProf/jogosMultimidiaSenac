@@ -1,0 +1,62 @@
+{
+	"name": "livroschao",
+	"plugin-id": "Sprite",
+	"sid": 554516882447588,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 24,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3047806,
+						"collisionPoly": {
+							"points": [
+								0.041666666666666664,
+								0.038461538461538464,
+								0.4583333333333333,
+								0.038461538461538464,
+								0.7916666666666666,
+								0.23076923076923078,
+								0.875,
+								0.38461538461538464,
+								0.9583333333333334,
+								0.5769230769230769,
+								0.9583333333333334,
+								0.8846153846153846,
+								0.9166666666666666,
+								0.9230769230769231,
+								0.16666666666666666,
+								0.9615384615384616,
+								0.041666666666666664,
+								0.8846153846153846
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 537484743917078,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

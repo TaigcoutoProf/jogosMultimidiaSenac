@@ -1,0 +1,54 @@
+{
+	"name": "luzparede1",
+	"plugin-id": "Sprite",
+	"sid": 952053214401432,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 87,
+						"height": 29,
+						"originX": 0.5172413793103449,
+						"originY": 0.46551724137931033,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9227343,
+						"collisionPoly": {
+							"points": [
+								0.4367696360153257,
+								0,
+								1,
+								0,
+								0.9944444444444445,
+								0.9841634738186462,
+								0,
+								0.9802043422733079,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 921886537530123,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

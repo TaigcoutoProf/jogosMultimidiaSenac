@@ -1,0 +1,699 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 44902,
+	"name": "Galoborg_Indie",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Áudio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Teclado",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Mosaico",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Toque",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "video",
+			"name": "Vídeo",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Projétil",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Campo de visão",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Explorador de rotas",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Fixar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Senóide",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "TileMovement",
+			"name": "Movimento em grid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Turret",
+			"name": "Canhão",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Sólido",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "nwkvol69g85",
+	"objectTypes": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"BotaoRecomeçar",
+					"GameOverFundo",
+					"ScoreGameOver",
+					"morte"
+				],
+				"subfolders": [],
+				"name": "GAmeOver"
+			},
+			{
+				"items": [
+					"Contagem_pontos",
+					"ContagemMoedas",
+					"Tempo",
+					"Coracao",
+					"Sprite3",
+					"Teclado",
+					"Texto",
+					"Toque",
+					"vida_extra",
+					"Mouse",
+					"Áudio",
+					"Vídeo",
+					"Vídeo2",
+					"tutorial"
+				],
+				"subfolders": [],
+				"name": "Hud"
+			},
+			{
+				"items": [
+					"Pause",
+					"TelaPause",
+					"pause_brasao",
+					"botao_continue",
+					"botao_reiniciar",
+					"botao_sair",
+					"texto_pause",
+					"tela_pause",
+					"sair_do_jogo",
+					"Sprite",
+					"reiniciar_layout",
+					"Sprite4",
+					"continue",
+					"paused_2",
+					"reiniciar"
+				],
+				"subfolders": [],
+				"name": "Pause"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Barreira1",
+							"Barreira2",
+							"Barreira3",
+							"Barreira4",
+							"Barreira5",
+							"Barreira6",
+							"Boss1",
+							"boss_torreta",
+							"BombaExplosao",
+							"CanhaoE",
+							"LaserE",
+							"AlvoCanhaoE",
+							"Switch1",
+							"Switch2",
+							"Switch3",
+							"Switch4",
+							"Switch5",
+							"Switch6",
+							"Trava1",
+							"Trava2",
+							"Trava3",
+							"CanhaoD",
+							"LaserD",
+							"Bomba1",
+							"AlvoCanhaoD",
+							"caixa_boss1",
+							"PowerUp",
+							"caixa_boss2",
+							"boss_hp",
+							"SwitchBarreirasD",
+							"SwitchBarreirasE",
+							"SaidaB1",
+							"mar_fogo",
+							"mar_fogo_explosao",
+							"torreta",
+							"canhao",
+							"mar_de_fogo",
+							"botao_barreira_direita",
+							"botao_barreira_esquerda",
+							"Bomba",
+							"alvo",
+							"boss_morte",
+							"caixa_boss3",
+							"caixa_boss4",
+							"caixa_boss5",
+							"caixa_boss6",
+							"portao"
+						],
+						"subfolders": [],
+						"name": "Boss"
+					},
+					{
+						"items": [
+							"drone_patrulheiro",
+							"drone_patrulheiro_morte",
+							"drone_perseguidor",
+							"drone_perseguidor_morte"
+						],
+						"subfolders": [],
+						"name": "inimigos"
+					}
+				],
+				"name": "Inimigo"
+			},
+			{
+				"items": [
+					"Caixa",
+					"Obstaculo",
+					"Parede",
+					"fundo_basico",
+					"Saida",
+					"32_caixa",
+					"32_Obstaculos",
+					"32_Parede",
+					"piso_areia",
+					"32_caixa_destruir",
+					"piso_chefe",
+					"piso_lixo",
+					"parede_chefe",
+					"obstaculos_concreto",
+					"Mosaico"
+				],
+				"subfolders": [],
+				"name": "Cenario"
+			},
+			{
+				"items": [
+					"Moeda"
+				],
+				"subfolders": [],
+				"name": "Itens"
+			},
+			{
+				"items": [
+					"galoborg",
+					"Hitbox",
+					"barra_energia",
+					"barra_hp",
+					"Player",
+					"PlayerBoss"
+				],
+				"subfolders": [],
+				"name": "player"
+			},
+			{
+				"items": [
+					"parabens",
+					"Sprite2",
+					"botao_reiniciar_parabens"
+				],
+				"subfolders": [],
+				"name": "Parabens"
+			},
+			{
+				"items": [
+					"tela_start",
+					"botao_comeco",
+					"logo"
+				],
+				"subfolders": [],
+				"name": "start"
+			},
+			{
+				"items": [
+					"bloco",
+					"fundo_transicao"
+				],
+				"subfolders": [],
+				"name": "transicao"
+			}
+		]
+	},
+	"functionsName": "Functions",
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"Barreiras",
+			"BombaExplosão",
+			"Boss",
+			"SwitchsBarreiras",
+			"inimigos"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"prototipo",
+			"prototipo2",
+			"Parabens",
+			"fase1",
+			"fase2",
+			"fase3",
+			"fase4",
+			"fase5",
+			"game_over",
+			"start",
+			"Abertura",
+			"pause",
+			"transicao"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"VariaveisGlobais",
+			"fase5",
+			"MonstroComportamento",
+			"Vida&GameOver",
+			"Caixa",
+			"Tempo",
+			"Pause",
+			"Player",
+			"PlayerBoss",
+			"fase2",
+			"fase3",
+			"fase4",
+			"fase1",
+			"start",
+			"parabens",
+			"transicao",
+			"game_over"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "caixa_arrasto.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 351750858222161,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "andar.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 152533692046156,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "andarf.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 175986953362749,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "collect-ring-15982.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 993815855985909,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "patrulheiro.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 979369947914915,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "patrulheiro_morte.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 352047802964661,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "dano.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 181319956603418,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "perseguidor_morte.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 497133579612714,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "destruir_boss.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 653072817229860,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "destruir_bossf.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 174012354998348,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "botao.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 774402949170694,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "aplausos.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 308254695832957,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "judgment_fase1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 392899806049850,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "sewers_music_fase2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 430431029780885,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "epikus_chefe.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 587340731162849,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "intro.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 424732635956675,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [
+				{
+					"name": "morte.mp4",
+					"type": "video/mp4",
+					"sid": 747628455689483,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "PixelOperator.ttf",
+					"type": "application/font-sfnt",
+					"sid": 913761228153629,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelOperator8-Bold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 920942061691695,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelOperator-Bold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 957436355083277,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelOperator8.ttf",
+					"type": "application/font-sfnt",
+					"sid": 679175844117056,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 112086613930491,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 445077230931661,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 265916519955632,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 793692639944682,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 215580130194321,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 538080556796234,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 222075129740613,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Linha do tempo 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [
+			"Fluxograma 1"
+		],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"autoIncrementVersion": false,
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 640,
+	"viewportHeight": 360,
+	"firstLayout": "start"
+}

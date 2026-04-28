@@ -1,0 +1,64 @@
+{
+	"name": "BookCloseUp",
+	"plugin-id": "Sprite",
+	"sid": 286696660179848,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 967564995421728
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 544,
+						"height": 478,
+						"originX": 0.5091911764705882,
+						"originY": 0.5125523012552301,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8626210,
+						"collisionPoly": {
+							"points": [
+								0.21643518518518517,
+								0.39284053928405394,
+								0.8332652505446623,
+								0.398651789865179,
+								1,
+								0.5137145513714552,
+								1,
+								0.700836820083682,
+								0.010825163398692805,
+								0.700836820083682,
+								0,
+								0.688052068805207,
+								0,
+								0.4939562993956299
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 284238701421660,
+				"name": "Closed",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

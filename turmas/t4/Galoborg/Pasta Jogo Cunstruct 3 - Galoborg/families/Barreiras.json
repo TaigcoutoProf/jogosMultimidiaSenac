@@ -1,0 +1,19 @@
+{
+	"name": "Barreiras",
+	"plugin-id": "Sprite",
+	"sid": 355423984786429,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Barreira6",
+		"Barreira5",
+		"Barreira4",
+		"Barreira3",
+		"Barreira2",
+		"Barreira1",
+		"Trava3",
+		"Trava2",
+		"Trava1"
+	]
+}

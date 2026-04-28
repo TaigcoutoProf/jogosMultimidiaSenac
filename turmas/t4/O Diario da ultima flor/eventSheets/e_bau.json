@@ -1,0 +1,273 @@
+{
+	"name": "e_bau",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Toque",
+					"sid": 693533639925957,
+					"parameters": {
+						"object": "botão"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 495493698508142,
+					"parameters": {
+						"variable": "bau_aberto",
+						"value": "true"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 705882925309759,
+					"parameters": {
+						"variable": "qtd_eventos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 954089891718688,
+					"parameters": {
+						"layout": "BaseJogo"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 790432529051890,
+					"parameters": {
+						"audio-file": "switch",
+						"loop": "not-looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"menu\""
+					}
+				}
+			],
+			"sid": 456240450443888
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Fader2",
+			"description": "Fotografias e outros popus",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Toque",
+							"sid": 823198338986113,
+							"disabled": true,
+							"parameters": {
+								"object": "Fader"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 598529159797575,
+							"parameters": {
+								"layer": "\"popup\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 792445755372289
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Toque",
+							"sid": 643116357769209,
+							"disabled": true,
+							"parameters": {
+								"object": "latacookies"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 473086676341409
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Toque",
+							"sid": 305900481870739,
+							"disabled": true,
+							"parameters": {
+								"object": "lataCookie"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 321619022410415,
+							"disabled": true,
+							"parameters": {
+								"object": "lataCookie"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 100163920742232,
+							"parameters": {
+								"layer": "1",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 997784708539638,
+							"parameters": {
+								"layer": "\"popup\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 222288236964500
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Toque",
+							"sid": 772700587602047,
+							"parameters": {
+								"object": "broche"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "broche",
+							"sid": 248452163124006
+						}
+					],
+					"sid": 493925205533693
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Toque",
+							"sid": 949738619551823,
+							"parameters": {
+								"object": "filmes"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "filmes",
+							"sid": 844574845604106
+						}
+					],
+					"sid": 917694072383021
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Toque",
+							"sid": 572923456822177,
+							"disabled": true,
+							"parameters": {
+								"object": "latacookies"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-touching-object",
+							"objectClass": "Toque",
+							"sid": 371370544275416,
+							"disabled": true,
+							"parameters": {
+								"object": "Fader"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-opacity",
+							"objectClass": "latacookies",
+							"sid": 355867205238167,
+							"disabled": true,
+							"parameters": {
+								"comparison": 0,
+								"opacity": "-100"
+							}
+						},
+						{
+							"id": "compare-opacity",
+							"objectClass": "Fader",
+							"sid": 346081494723884,
+							"parameters": {
+								"comparison": 0,
+								"opacity": "-100"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 187027538084585
+				}
+			],
+			"sid": 170370906148643
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Toque",
+					"sid": 221024696000386,
+					"parameters": {
+						"object": "textoBau"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "textoBau",
+					"sid": 610129374869545
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto",
+					"sid": 611050850645499,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 731311633320037
+		}
+	],
+	"sid": 790521104759647
+}

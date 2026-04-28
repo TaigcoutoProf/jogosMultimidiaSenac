@@ -1,0 +1,1025 @@
+{
+	"name": "f-quarto",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Pegouchave",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 670637327495786
+		},
+		{
+			"eventType": "variable",
+			"name": "jasaiu",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 492100833602762
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "f-player"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 673116261451645
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 952582981250906,
+					"parameters": {
+						"variable": "jasaiu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Player",
+					"sid": 641357211570399,
+					"parameters": {
+						"x": "73",
+						"y": "308"
+					}
+				}
+			],
+			"sid": 189641722393476
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 302380202530091,
+					"parameters": {
+						"object": "chavenova"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 206754423978003,
+					"parameters": {
+						"instance-variable": "temchavedoquarto",
+						"value": "true"
+					}
+				},
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 728121529014048,
+					"parameters": {
+						"variable": "Pegouchave"
+					}
+				}
+			],
+			"sid": 833686594034801
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Texto",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 922378839912999,
+							"parameters": {
+								"object": "sensorPorta"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "dicaporta",
+							"sid": 236704156725979,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 991549675476906
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 819836859954527,
+							"parameters": {
+								"object": "sensorPorta"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "dicaporta",
+							"sid": 949149427430133,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 454802300332628
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 101060318558031,
+							"parameters": {
+								"object": "capivara"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "ecapivara",
+							"sid": 952627034523415,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 654093620709427
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 374733874664141,
+							"parameters": {
+								"object": "capivara"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "ecapivara",
+							"sid": 863441207023120,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 495972616531622
+				}
+			],
+			"sid": 364207318607961
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Interaçoes com e ",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 903052024518852,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 903882599100808,
+							"parameters": {
+								"object": "sensorPorta"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 977504226907345,
+							"parameters": {
+								"variable": "Pegouchave"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 271076243639621,
+							"parameters": {
+								"variable": "jasaiu",
+								"value": "true"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 611363876758429,
+							"parameters": {
+								"layout": "rua_1"
+							}
+						}
+					],
+					"sid": 570289110528330
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 738165109863363,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 482909443412968,
+							"parameters": {
+								"object": "sensorPorta"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 453990407931780,
+							"parameters": {
+								"variable": "Pegouchave"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "portafechada",
+							"sid": 181269026942300,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "portafechada",
+							"sid": 822610029203103,
+							"parameters": {
+								"text": "\" Tenho que encontrar minha chave!\"",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 856904837458171,
+							"parameters": {
+								"seconds": "2.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "portafechada",
+							"sid": 981969659476602,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 947323063190093
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 197948585102567,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 636249446407679,
+							"parameters": {
+								"object": "sensorPorta"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 508518810938850,
+							"parameters": {
+								"variable": "Pegouchave"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "CdTPorta",
+							"sid": 746592498519177,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 280189369232025,
+							"parameters": {
+								"seconds": "2.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CdTPorta",
+							"sid": 989883879906429,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 631045673027264
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 480758038696244,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 300045346371720,
+							"parameters": {
+								"object": "capivara"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FALACAPIVARA",
+							"sid": 560251166298114,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "FALACAPIVARA",
+							"sid": 882752765858565,
+							"parameters": {
+								"text": "\" own\"",
+								"duration": "0.75"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 524827134529906,
+							"parameters": {
+								"seconds": "1.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FALACAPIVARA",
+							"sid": 804774020017591,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 736455748137778
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 600564853292922,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 309412029880895,
+							"parameters": {
+								"object": "capivara"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "caixacapivara",
+							"sid": 852593301260441,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 759207538155810,
+							"parameters": {
+								"seconds": "1.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "caixacapivara",
+							"sid": 177441144123507,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 860374322700981
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 106562677587025,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 933093134222326,
+							"parameters": {
+								"object": "capivara"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 604672463486174,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 839913311434549
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 944437974760324,
+									"parameters": {
+										"audio-file": {
+											"path": "MB010"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 613804874205262
+						}
+					]
+				}
+			],
+			"sid": 559767096872760
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "interacoes com controle",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-released",
+							"objectClass": "Gamepad",
+							"sid": 728054045417049,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-y"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 565825223922388,
+							"parameters": {
+								"object": "sensorPorta"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 317910160553881,
+							"parameters": {
+								"variable": "Pegouchave"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 300621840988118,
+							"parameters": {
+								"layout": "rua_1"
+							}
+						}
+					],
+					"sid": 938007213483927
+				}
+			],
+			"sid": 538069841403168
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 223034681233280
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 473056947529610,
+					"parameters": {
+						"variable": "Pegouchave"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "ColisaoCasa",
+					"sid": 794066575272045,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 260526168671991
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 849163593056209,
+					"parameters": {
+						"variable": "Pegouchave"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "chavenova",
+					"sid": 880707628742011
+				}
+			],
+			"sid": 372010815689358
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Interaçoes com e (controle)",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 226403641634685,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-y"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 533103319376270,
+							"parameters": {
+								"object": "sensorPorta"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 848856244055412,
+							"parameters": {
+								"variable": "Pegouchave"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 365015307687323,
+							"parameters": {
+								"layout": "rua_1"
+							}
+						}
+					],
+					"sid": 711283516088008
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 399184088086661,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-y"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 709433313353549,
+							"parameters": {
+								"object": "sensorPorta"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 208809021718408,
+							"parameters": {
+								"variable": "Pegouchave"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "portafechada",
+							"sid": 493691300225888,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 317111836995680,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "portafechada",
+							"sid": 132199477227202,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 484961520741384
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 332803406915042,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-y"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 799139408179556,
+							"parameters": {
+								"object": "sensorPorta"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 474057491426660,
+							"parameters": {
+								"variable": "Pegouchave"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "CdTPorta",
+							"sid": 466071578906635,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 562927031012569,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CdTPorta",
+							"sid": 374937217522214,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 804033070896202
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 434931433705219,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-y"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 866828713637725,
+							"parameters": {
+								"object": "capivara"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FALACAPIVARA",
+							"sid": 273042786744208,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "FALACAPIVARA",
+							"sid": 902838353912486,
+							"parameters": {
+								"text": "\"*Som de capivara* own\"",
+								"duration": "0.75"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 288505485048336,
+							"parameters": {
+								"seconds": "1.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FALACAPIVARA",
+							"sid": 479744076795111,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 575326092859087
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 113696890788467,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-y"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 526301794938074,
+							"parameters": {
+								"object": "capivara"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "caixacapivara",
+							"sid": 720939743395056,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 650883204895230,
+							"parameters": {
+								"seconds": "1.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "caixacapivara",
+							"sid": 257545222485162,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 762449165520258
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 568117383335774,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-y"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 142387274716745,
+							"parameters": {
+								"object": "capivara"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 163968209647297,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 486444892210642
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 178163329278214,
+									"parameters": {
+										"audio-file": {
+											"path": "MB010"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 835210951193954
+						}
+					]
+				}
+			],
+			"sid": 442734640547546
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 125665067609165,
+					"parameters": {
+						"object": "sensorPorta"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "eporta",
+					"sid": 420202011172891,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 345936305854005
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 277684682828663,
+					"parameters": {
+						"object": "sensorPorta"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "eporta",
+					"sid": 788455567245420,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 411384428135704
+		}
+	],
+	"sid": 550939120163136
+}

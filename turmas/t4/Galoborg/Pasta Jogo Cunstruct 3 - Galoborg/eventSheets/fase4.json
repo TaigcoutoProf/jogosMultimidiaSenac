@@ -1,0 +1,194 @@
+{
+	"name": "fase4",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Vida&GameOver"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "MonstroComportamento"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Caixa"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Player"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Tempo"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 681343068967223
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 233363297334994,
+					"parameters": {
+						"audio-file": "sewers_music_fase2",
+						"loop": "looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Áudio",
+					"sid": 179786670633486,
+					"parameters": {
+						"tag": "\"fase1\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 417233256099595,
+					"parameters": {
+						"variable": "tempo",
+						"value": "300"
+					}
+				}
+			],
+			"sid": 701213151564794
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 766814242743331
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Saida",
+					"sid": 587999959405205,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 606805877298063
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 232557840906444,
+					"parameters": {
+						"variable": "Moeda",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Saida",
+					"sid": 120086756263171,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 733670711836177
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "galoborg",
+					"sid": 190091061414850,
+					"parameters": {
+						"object": "Saida",
+						"offset-x": "0",
+						"offset-y": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 686479128804388,
+					"parameters": {
+						"variable": "Moeda",
+						"comparison": 5,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 113901038477131,
+					"parameters": {
+						"layout": "fase5"
+					}
+				}
+			],
+			"sid": 411965529483759
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 347029465689829
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Contagem_pontos",
+					"sid": 553151487525253,
+					"parameters": {
+						"text": "Pontos"
+					}
+				}
+			],
+			"sid": 407210298324778
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 609785130393079
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 803627944503378,
+					"parameters": {
+						"variable": "Moeda",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 448399611806010
+		}
+	],
+	"sid": 841960044200878
+}

@@ -1,0 +1,67 @@
+{
+	"name": "Boss1",
+	"plugin-id": "Sprite",
+	"sid": 198466324785828,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 996755663294658
+		},
+		{
+			"behaviorId": "Turret",
+			"name": "Canhão",
+			"sid": 688033653386350
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 96,
+						"height": 162,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6963808,
+						"collisionPoly": {
+							"points": [
+								0.13541666666666666,
+								0,
+								0.8645833333333334,
+								0,
+								1,
+								0.030864197530864196,
+								0.9999999999999999,
+								0.9876543209876543,
+								0,
+								0.9876543209876543,
+								3.469446951953614e-18,
+								0.012345679012345678
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 173217429905880,
+				"name": "Animação 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

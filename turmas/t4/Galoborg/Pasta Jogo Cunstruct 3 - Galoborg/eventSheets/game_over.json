@@ -1,0 +1,97 @@
+{
+	"name": "game_over",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 430101229054245
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 436706080357187,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": false
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "morte",
+					"sid": 518483800814264
+				}
+			],
+			"sid": 667870537250337
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 849514901259183,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "botao_continue"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 240412462759785,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "botao_continue",
+					"sid": 377784490330563,
+					"parameters": {
+						"animation": "\"Animação 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 913371156819438,
+					"parameters": {
+						"audio-file": "botao",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 802783416216023,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 338028973959696,
+					"parameters": {
+						"layout": "start"
+					}
+				}
+			],
+			"sid": 103386870945736
+		}
+	],
+	"sid": 718026303248727
+}

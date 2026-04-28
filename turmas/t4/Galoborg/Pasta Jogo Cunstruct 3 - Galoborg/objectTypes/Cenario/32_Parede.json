@@ -1,0 +1,61 @@
+{
+	"name": "32_Parede",
+	"plugin-id": "Tilemap",
+	"sid": 954661416720008,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 368585705769906
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 720,
+		"height": 360,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 3978297,
+		"useCollisionPoly": true,
+		"tag": ""
+	},
+	"tile-collision-polys": {
+		"91": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0.03125,
+					1,
+					0.03125,
+					1,
+					1,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"136": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0.03125,
+					1,
+					0.03125,
+					1,
+					1,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		}
+	}
+}

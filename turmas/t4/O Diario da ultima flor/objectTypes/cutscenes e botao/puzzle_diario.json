@@ -1,0 +1,62 @@
+{
+	"name": "puzzle_diario",
+	"plugin-id": "Sprite",
+	"sid": 757933374361975,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Fixar",
+			"sid": 317643591285087
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1333,
+						"height": 962,
+						"originX": 0.49658959825977794,
+						"originY": 0.4936031929823283,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5023625,
+						"collisionPoly": {
+							"points": [
+								0.7624060928960672,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0.33991487369216644,
+								1,
+								0,
+								1,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 341641536688689,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

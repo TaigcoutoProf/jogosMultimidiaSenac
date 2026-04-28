@@ -1,0 +1,60 @@
+{
+	"name": "ralo",
+	"plugin-id": "Sprite",
+	"sid": 993235337703309,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 18,
+						"height": 17,
+						"originX": 0.6111111111111112,
+						"originY": 0.7352941176470589,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6841700,
+						"collisionPoly": {
+							"points": [
+								0.16666666666666666,
+								0.058823529411764705,
+								0.8333333333333334,
+								0.058823529411764705,
+								0.9444444444444444,
+								0.17647058823529413,
+								0.9444444444444444,
+								0.8235294117647058,
+								0.8333333333333334,
+								0.9411764705882353,
+								0.16666666666666666,
+								0.9411764705882353,
+								0.05555555555555555,
+								0.8235294117647058,
+								0.05555555555555555,
+								0.17647058823529413
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 107528357818247,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

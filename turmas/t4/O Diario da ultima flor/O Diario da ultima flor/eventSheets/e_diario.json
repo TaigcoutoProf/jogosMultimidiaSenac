@@ -1,0 +1,174 @@
+{
+	"name": "e_diario",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Toque",
+					"sid": 727631946677328,
+					"parameters": {
+						"object": "botão"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 684835075633494,
+					"parameters": {
+						"variable": "cut_diario",
+						"value": "true"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 609379101812169,
+					"parameters": {
+						"variable": "qtd_eventos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 593352226258221,
+					"parameters": {
+						"layout": "BaseJogo"
+					}
+				}
+			],
+			"sid": 457394346900006
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "Sprite12",
+					"sid": 339016912069181,
+					"parameters": {
+						"comparison": 5,
+						"y-co-ordinate": "854"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Sprite12",
+					"sid": 279837224531510,
+					"parameters": {
+						"y": "854"
+					}
+				}
+			],
+			"sid": 477005228472429
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "Sprite12",
+					"sid": 147597342604286,
+					"parameters": {
+						"comparison": 3,
+						"y-co-ordinate": "-520"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Sprite12",
+					"sid": 193099326945580,
+					"parameters": {
+						"y": "-520"
+					}
+				}
+			],
+			"sid": 134220539035904
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 107761877505561
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Sprite13",
+					"sid": 412700242481007,
+					"behaviorType": "Fixar",
+					"parameters": {
+						"pin-to": "Sprite12",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 370656839309930
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-mouse-wheel",
+					"objectClass": "Mouse",
+					"sid": 409969304504973,
+					"parameters": {
+						"direction": "up"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Sprite12",
+					"sid": 557857976893282,
+					"parameters": {
+						"y": "Sprite12.Y + 20"
+					}
+				}
+			],
+			"sid": 138303288251260
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-mouse-wheel",
+					"objectClass": "Mouse",
+					"sid": 455510418483207,
+					"parameters": {
+						"direction": "down"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Sprite12",
+					"sid": 293293656265072,
+					"parameters": {
+						"y": "Sprite12.Y - 20"
+					}
+				}
+			],
+			"sid": 166753029351708
+		}
+	],
+	"sid": 401077440334493
+}

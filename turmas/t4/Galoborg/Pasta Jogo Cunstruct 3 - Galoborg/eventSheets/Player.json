@@ -1,0 +1,1407 @@
+{
+	"name": "Player",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 705853840639535,
+					"parameters": {
+						"variable": "Pause"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 507861538233804,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 253595833455216,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "Player",
+									"sid": 248083516025918,
+									"parameters": {
+										"object": "32_caixa",
+										"offset-x": "0",
+										"offset-y": "1"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Player",
+									"sid": 226864116699245,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-y",
+									"objectClass": "32_caixa",
+									"sid": 851248413157116,
+									"parameters": {
+										"y": "32_caixa.Y+1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 312975499528831,
+									"parameters": {
+										"audio-file": "caixa_arrasto",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 605675436760107
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 961784554489826,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "Player",
+									"sid": 519475524560174,
+									"parameters": {
+										"object": "32_caixa",
+										"offset-x": "1",
+										"offset-y": "0"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Player",
+									"sid": 731299468671827,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "32_caixa",
+									"sid": 971006123981839,
+									"parameters": {
+										"x": "32_caixa.X+1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 379395072292300,
+									"parameters": {
+										"audio-file": "caixa_arrasto",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 574665828833421
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 709029587982077,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "Player",
+									"sid": 813964676930016,
+									"parameters": {
+										"object": "32_caixa",
+										"offset-x": "0",
+										"offset-y": "-1"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Player",
+									"sid": 909696222903033,
+									"parameters": {
+										"comparison": 0,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-y",
+									"objectClass": "32_caixa",
+									"sid": 192501487966098,
+									"parameters": {
+										"y": "32_caixa.y-1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 516645957293731,
+									"parameters": {
+										"audio-file": "caixa_arrasto",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 722856339602748
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 671878929661746,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "Player",
+									"sid": 928162908866605,
+									"parameters": {
+										"object": "32_caixa",
+										"offset-x": "-1",
+										"offset-y": "0"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Player",
+									"sid": 125342271830045,
+									"parameters": {
+										"comparison": 0,
+										"number": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "32_caixa",
+									"sid": 774797998496975,
+									"parameters": {
+										"x": "32_caixa.X-1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 523922916510649,
+									"parameters": {
+										"audio-file": "caixa_arrasto",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 341804708180397
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 272190106643594,
+									"parameters": {
+										"variable": "Moeda",
+										"comparison": 0,
+										"value": "10"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 770871035739381
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Texto",
+									"sid": 858630300177069,
+									"parameters": {
+										"text": "\"vida\""
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "vida_extra",
+									"sid": 249195979276838,
+									"parameters": {
+										"text": "moeda"
+									}
+								}
+							],
+							"sid": 336971343614217
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 432271195864002
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "vida_extra",
+									"sid": 535191084952484,
+									"parameters": {
+										"text": "vida_extra"
+									}
+								}
+							],
+							"sid": 575960618022554
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "PlayerBoss",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Teclado",
+											"sid": 155556097529077,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-at-offset",
+											"objectClass": "Player",
+											"sid": 414658038681127,
+											"parameters": {
+												"object": "caixa_boss1",
+												"offset-x": "0",
+												"offset-y": "1"
+											}
+										},
+										{
+											"id": "compare-animation-frame",
+											"objectClass": "Player",
+											"sid": 610980856120793,
+											"parameters": {
+												"comparison": 0,
+												"number": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-y",
+											"objectClass": "caixa_boss1",
+											"sid": 286563352669783,
+											"parameters": {
+												"y": "caixa_boss1.Y+1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Áudio",
+											"sid": 510438469167132,
+											"parameters": {
+												"audio-file": "caixa_arrasto",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 183259729767386
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Teclado",
+											"sid": 242555249258840,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-at-offset",
+											"objectClass": "Player",
+											"sid": 514739927112204,
+											"parameters": {
+												"object": "caixa_boss1",
+												"offset-x": "1",
+												"offset-y": "0"
+											}
+										},
+										{
+											"id": "compare-animation-frame",
+											"objectClass": "Player",
+											"sid": 876928118685371,
+											"parameters": {
+												"comparison": 0,
+												"number": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-x",
+											"objectClass": "caixa_boss1",
+											"sid": 977920316398960,
+											"parameters": {
+												"x": "caixa_boss1.X+1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Áudio",
+											"sid": 492832795859764,
+											"parameters": {
+												"audio-file": "caixa_arrasto",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 215407283922752
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Teclado",
+											"sid": 444067821287533,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-at-offset",
+											"objectClass": "Player",
+											"sid": 216308838735837,
+											"parameters": {
+												"object": "caixa_boss1",
+												"offset-x": "0",
+												"offset-y": "-1"
+											}
+										},
+										{
+											"id": "compare-animation-frame",
+											"objectClass": "Player",
+											"sid": 809334801884313,
+											"parameters": {
+												"comparison": 0,
+												"number": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-y",
+											"objectClass": "caixa_boss1",
+											"sid": 291939426436824,
+											"parameters": {
+												"y": "caixa_boss1.y-1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Áudio",
+											"sid": 893046465530223,
+											"parameters": {
+												"audio-file": "caixa_arrasto",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 977818755570556
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Teclado",
+											"sid": 462162914369358,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-at-offset",
+											"objectClass": "Player",
+											"sid": 685311337170465,
+											"parameters": {
+												"object": "caixa_boss1",
+												"offset-x": "-1",
+												"offset-y": "0"
+											}
+										},
+										{
+											"id": "compare-animation-frame",
+											"objectClass": "Player",
+											"sid": 631852276549306,
+											"parameters": {
+												"comparison": 0,
+												"number": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-x",
+											"objectClass": "caixa_boss1",
+											"sid": 439743627514211,
+											"parameters": {
+												"x": "caixa_boss1.X-1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Áudio",
+											"sid": 253604617263123,
+											"parameters": {
+												"audio-file": "caixa_arrasto",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 898040190114562
+								}
+							],
+							"sid": 284530174131104
+						}
+					],
+					"sid": 219865217074519
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 725429855130759,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "Player",
+									"sid": 695091128297908,
+									"parameters": {
+										"object": "32_caixa",
+										"offset-x": "0",
+										"offset-y": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-y",
+									"objectClass": "32_caixa",
+									"sid": 822635700930706,
+									"parameters": {
+										"y": "32_caixa.Y+1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 899172829264797,
+									"parameters": {
+										"audio-file": "caixa_arrasto",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 850159015376518
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 639012853845074,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "Player",
+									"sid": 241488494783473,
+									"parameters": {
+										"object": "32_caixa",
+										"offset-x": "-1",
+										"offset-y": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "32_caixa",
+									"sid": 153302749552644,
+									"parameters": {
+										"x": "32_caixa.X-1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 208165396137343,
+									"parameters": {
+										"audio-file": "caixa_arrasto",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 970501124863392
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 536338800579833,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "pick-parent",
+									"objectClass": "Player",
+									"sid": 391370046018978,
+									"parameters": {
+										"parent": "32_caixa",
+										"which": "own"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "32_caixa",
+									"sid": 484143154058689,
+									"parameters": {
+										"x": "32_caixa.X+1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 886552940787559,
+									"parameters": {
+										"audio-file": "caixa_arrasto",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 688801247608914
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 370461525622593,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "Player",
+									"sid": 144004796841746,
+									"parameters": {
+										"object": "32_caixa",
+										"offset-x": "0",
+										"offset-y": "-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-y",
+									"objectClass": "32_caixa",
+									"sid": 350820558217451,
+									"parameters": {
+										"y": "32_caixa.y-1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 827899442864464,
+									"parameters": {
+										"audio-file": "caixa_arrasto",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 698041152503361
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "Player",
+									"sid": 333343011472783,
+									"parameters": {
+										"object": "Moeda",
+										"offset-x": "0",
+										"offset-y": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 853578398638806,
+									"parameters": {
+										"audio-file": "collect-ring-15982",
+										"loop": "not-looping",
+										"volume": "-20",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Moeda",
+									"sid": 714547055332118,
+									"parameters": {
+										"animation": "\"destruir\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Moeda",
+									"sid": 904318592717738
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 698647516242672,
+									"parameters": {
+										"variable": "Moeda",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 911332667814153,
+									"parameters": {
+										"variable": "Contador_moeda_vida",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ContagemMoedas",
+									"sid": 700615893855353,
+									"parameters": {
+										"text": "Moeda"
+									}
+								}
+							],
+							"sid": 228481123590531,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 683384466318598,
+											"parameters": {
+												"variable": "Contador_moeda_vida",
+												"comparison": 0,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 772534048535264,
+											"parameters": {
+												"variable": "Contador_moeda_vida",
+												"value": "0"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 197667785661159,
+											"parameters": {
+												"variable": "vida_extra",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 407723149087881
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 549662344467388
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Player2Boss",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Teclado",
+											"sid": 938501706182303,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-at-offset",
+											"objectClass": "Player",
+											"sid": 670840001748304,
+											"parameters": {
+												"object": "caixa_boss1",
+												"offset-x": "0",
+												"offset-y": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-y",
+											"objectClass": "caixa_boss1",
+											"sid": 733079905949948,
+											"parameters": {
+												"y": "caixa_boss1.Y+1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Áudio",
+											"sid": 528773506334554,
+											"parameters": {
+												"audio-file": "caixa_arrasto",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 182596627098850
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Teclado",
+											"sid": 162355246034341,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-at-offset",
+											"objectClass": "Player",
+											"sid": 702630164252268,
+											"parameters": {
+												"object": "caixa_boss1",
+												"offset-x": "-1",
+												"offset-y": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-x",
+											"objectClass": "caixa_boss1",
+											"sid": 759455715507266,
+											"parameters": {
+												"x": "caixa_boss1.X-1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Áudio",
+											"sid": 261695399256758,
+											"parameters": {
+												"audio-file": "caixa_arrasto",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 193081107509560
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Teclado",
+											"sid": 987855549113781,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "pick-parent",
+											"objectClass": "Player",
+											"sid": 501378772007251,
+											"parameters": {
+												"parent": "caixa_boss1",
+												"which": "own"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-x",
+											"objectClass": "caixa_boss1",
+											"sid": 122827868276293,
+											"parameters": {
+												"x": "caixa_boss1.X+1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Áudio",
+											"sid": 185311778726424,
+											"parameters": {
+												"audio-file": "caixa_arrasto",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 166875627593707
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Teclado",
+											"sid": 632427363067951,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-at-offset",
+											"objectClass": "Player",
+											"sid": 962116985094328,
+											"parameters": {
+												"object": "caixa_boss1",
+												"offset-x": "0",
+												"offset-y": "-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-y",
+											"objectClass": "caixa_boss1",
+											"sid": 370248180466852,
+											"parameters": {
+												"y": "caixa_boss1.y-1"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Áudio",
+											"sid": 875900536013174,
+											"parameters": {
+												"audio-file": "caixa_arrasto",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 568611588412896
+								}
+							],
+							"sid": 845404302161808
+						}
+					],
+					"sid": 748932891810021
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "PlayerAnimacao",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 723037638816496
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "galoborg",
+							"sid": 860604656990588,
+							"behaviorType": "Fixar",
+							"parameters": {
+								"pin-to": "Player",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "Hitbox",
+							"sid": 985680922735193,
+							"behaviorType": "Fixar",
+							"parameters": {
+								"pin-to": "Player",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "alvo",
+							"sid": 508191309122675,
+							"behaviorType": "Fixar",
+							"parameters": {
+								"pin-to": "Player",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 122687973474953
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 625295027036102,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 269851913093990,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 297590428559341,
+							"parameters": {
+								"audio-file": "andarf",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "galoborg",
+							"sid": 581123792160848,
+							"parameters": {
+								"angle": "0"
+							}
+						}
+					],
+					"sid": 937787106142231
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 233735625351218,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 609444449793702,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 433729325355477,
+							"parameters": {
+								"audio-file": "andarf",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "galoborg",
+							"sid": 711958812460698,
+							"parameters": {
+								"angle": "90"
+							}
+						}
+					],
+					"sid": 906590330343492
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 346039820967673,
+							"parameters": {
+								"key": 40
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 744985498445796,
+							"parameters": {
+								"frame-number": "2"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 546377855003626,
+							"parameters": {
+								"audio-file": "andarf",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "galoborg",
+							"sid": 435949686618296,
+							"parameters": {
+								"angle": "180"
+							}
+						}
+					],
+					"sid": 223071197525944
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 308732141253460,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 402439868871466,
+							"parameters": {
+								"frame-number": "3"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 611430739345167,
+							"parameters": {
+								"audio-file": "andarf",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "galoborg",
+							"sid": 595193494311553,
+							"parameters": {
+								"angle": "-90"
+							}
+						}
+					],
+					"sid": 459799923120539
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "Player",
+							"sid": 287199372128698,
+							"behaviorType": "MovimentoEmGrid"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "galoborg",
+							"sid": 950689716180525,
+							"parameters": {
+								"animation": "\"caminhar\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 228294566247698
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "Player",
+							"sid": 493049908230440,
+							"behaviorType": "MovimentoEmGrid",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "galoborg",
+							"sid": 935073782100620,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 896998080779347
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 583009533515466
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-animation",
+							"objectClass": "barra_energia",
+							"sid": 969472390057236
+						}
+					],
+					"sid": 320352310449182
+				}
+			],
+			"sid": 921242452157336
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 808368562382101,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 565558947810289,
+					"parameters": {
+						"audio-file": "andarf",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"andarF\""
+					}
+				}
+			],
+			"sid": 425841574377793
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 104801219504319,
+					"disabled": true,
+					"parameters": {
+						"key": 38
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Áudio",
+					"sid": 955777405851486,
+					"parameters": {
+						"tag": "\"andarF\""
+					}
+				}
+			],
+			"sid": 971430598370044
+		}
+	],
+	"sid": 516486811206017
+}

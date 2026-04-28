@@ -1,0 +1,2453 @@
+{
+	"name": "fase5",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Tempo"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Caixa"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "MonstroComportamento"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Vida&GameOver"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Player"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 985427951307063
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 488369294090738,
+					"parameters": {
+						"audio-file": "epikus_chefe",
+						"loop": "looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Switch1",
+					"sid": 993655540313137
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Switch2",
+					"sid": 229780426744577
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Switch3",
+					"sid": 409813687358947
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Switch4",
+					"sid": 181796618538802
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Switch5",
+					"sid": 132541638790158
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Switch6",
+					"sid": 685392321390989
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "botao_barreira_direita",
+					"sid": 644877192519557,
+					"disabled": true
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "botao_barreira_esquerda",
+					"sid": 659875839431026,
+					"disabled": true
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Barreira1",
+					"sid": 874149689068163
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Barreira2",
+					"sid": 894156684150208
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Barreira3",
+					"sid": 105973068564080
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Barreira4",
+					"sid": 878833104291832
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Barreira5",
+					"sid": 273036225629507
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Barreira6",
+					"sid": 646053772658128
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PowerUp",
+					"sid": 812992593294135,
+					"disabled": true,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 807149212937456,
+					"parameters": {
+						"variable": "TurnoDoBoss",
+						"value": "0"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "SwitchsBarreiras",
+					"sid": 986736571363285,
+					"disabled": true
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Barreiras",
+					"sid": 286854711216926,
+					"disabled": true,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Barreiras",
+					"sid": 646054436787866,
+					"disabled": true,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "mar_de_fogo",
+					"sid": 994804649083233,
+					"disabled": true
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "caixa_boss1",
+					"sid": 750583596770737
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "alvo",
+					"sid": 135290271041942,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Saida",
+					"sid": 384285454652355,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Saida",
+					"sid": 172148588388248,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 973841038753622
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-time",
+					"objectClass": "System",
+					"sid": 112194333108889,
+					"parameters": {
+						"comparison": 0,
+						"time-seconds": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 837912179799629,
+					"parameters": {
+						"variable": "TurnoDoBoss",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 568745359044200,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "TurnoBoss",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 223050392277253,
+									"parameters": {
+										"variable": "TurnoDoBoss",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 242798308709771,
+							"children": [
+								{
+									"eventType": "group",
+									"disabled": false,
+									"title": "TurnoBoss1",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-time",
+													"objectClass": "System",
+													"sid": 411959104523729,
+													"parameters": {
+														"comparison": 0,
+														"time-seconds": "10"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 374999936545685,
+													"parameters": {
+														"variable": "Botoes",
+														"value": "1"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 708858928426079,
+													"parameters": {
+														"variable": "Torretas",
+														"value": "0"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 899983982055279,
+													"parameters": {
+														"seconds": "10",
+														"use-timescale": false
+													}
+												}
+											],
+											"sid": 794960537757126
+										}
+									],
+									"sid": 618454562419429
+								}
+							]
+						}
+					],
+					"sid": 673277069393154
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": true,
+			"title": "canhao_turno",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-shoot",
+							"objectClass": "CanhaoE",
+							"sid": 462029926194477,
+							"behaviorType": "Canhão"
+						}
+					],
+					"actions": [],
+					"sid": 673753950748970
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Barreira5",
+							"sid": 613628128751430
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Trava3",
+							"sid": 424696302127406
+						}
+					],
+					"sid": 106666740727432
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Barreira3",
+							"sid": 218367713329656
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Trava2",
+							"sid": 852182182059861
+						}
+					],
+					"sid": 824701050316805
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Barreira1",
+							"sid": 758404113049893
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Trava1",
+							"sid": 904762009782650
+						}
+					],
+					"sid": 819595933874862
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Barreira6",
+							"sid": 599646636540820
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Trava3",
+							"sid": 362909345913335
+						}
+					],
+					"sid": 371274001575309
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Barreira4",
+							"sid": 425277752817428
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Trava2",
+							"sid": 775398403071000
+						}
+					],
+					"sid": 758528637369885
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Barreira2",
+							"sid": 411285059272619
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Trava1",
+							"sid": 441990602577026
+						}
+					],
+					"sid": 698972368302342
+				}
+			],
+			"sid": 571655120259282
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Trava1",
+					"sid": 710667429721520
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "caixa_boss1",
+					"sid": 418822174436221,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "caixa_boss2",
+					"sid": 830488905331753,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PowerUp",
+					"sid": 946084333131110,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PowerUp",
+					"sid": 678225626400342,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 827308558029122,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 954491978721650,
+					"parameters": {
+						"variable": "Torretas",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 654861244088701,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Torreta",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-time",
+									"objectClass": "System",
+									"sid": 271112218889473,
+									"parameters": {
+										"comparison": 5,
+										"time-seconds": "3.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "acquire-target",
+									"objectClass": "boss_torreta",
+									"sid": 451203374335231,
+									"behaviorType": "Canhão",
+									"parameters": {
+										"target": "alvo"
+									}
+								}
+							],
+							"sid": 215469519644347
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 470788276972913,
+									"parameters": {
+										"interval-seconds": "2.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 913358367279372,
+									"parameters": {
+										"object-to-create": "Bomba",
+										"layer": "4",
+										"x": "alvo.ImagePointX(0)",
+										"y": "alvo.ImagePointY(0)",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 804800030498790,
+									"parameters": {
+										"seconds": "3",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Bomba",
+									"sid": 267269343791725
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 375699559969931,
+									"parameters": {
+										"object-to-create": "BombaExplosao",
+										"layer": "4",
+										"x": "Bomba.ImagePointX(0)",
+										"y": "Bomba.ImagePointY(0)",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 961549249832092,
+									"parameters": {
+										"seconds": "3",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "BombaExplosao",
+									"sid": 985015216110618
+								}
+							],
+							"sid": 340324096386134
+						}
+					],
+					"sid": 175017900291564
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Botões",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "Hitbox",
+							"sid": 707724970078587,
+							"parameters": {
+								"object": "botao_barreira_direita",
+								"offset-x": "0",
+								"offset-y": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "botao_barreira_direita",
+							"sid": 236721376306719,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Barreira2",
+							"sid": 180382025181613,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Barreira4",
+							"sid": 623554984421066,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Barreira6",
+							"sid": 655439109092481,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Barreira2",
+							"sid": 304608997495853,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Barreira4",
+							"sid": 844003317607731,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Barreira6",
+							"sid": 630070771932256,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 355076605075660,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "botao_barreira_direita",
+							"sid": 678716328219674,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 637919301840861,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "Hitbox",
+							"sid": 770816276799553,
+							"parameters": {
+								"object": "botao_barreira_esquerda",
+								"offset-x": "0",
+								"offset-y": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "botao_barreira_esquerda",
+							"sid": 722402420362381,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Barreira1",
+							"sid": 583307467321383,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Barreira3",
+							"sid": 999529362607530,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Barreira5",
+							"sid": 200863095410308,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Barreira1",
+							"sid": 468938775512013,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Barreira3",
+							"sid": 220381008296220,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Barreira5",
+							"sid": 609403827919255,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 107385765565471,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "botao_barreira_esquerda",
+							"sid": 351348667538366,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 208333022455360,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 845264577525586,
+							"parameters": {
+								"variable": "Botoes",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 900929983703577,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Botoes1",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-time",
+											"objectClass": "System",
+											"sid": 773497670589507,
+											"parameters": {
+												"comparison": 0,
+												"time-seconds": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 244002131384944,
+											"disabled": true,
+											"parameters": {
+												"variable": "Barreiras",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch1",
+											"sid": 728186223054280,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch2",
+											"sid": 934335821771174,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch3",
+											"sid": 437530346019768,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch4",
+											"sid": 349075486947011,
+											"disabled": true,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch5",
+											"sid": 572913499345640,
+											"disabled": true,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch6",
+											"sid": 990721494592250,
+											"disabled": true,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 108540196301419
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "galoborg",
+											"sid": 686494390439608,
+											"parameters": {
+												"object": "Switch1"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 366425754979371,
+											"parameters": {
+												"variable": "Botoes",
+												"comparison": 0,
+												"value": "1"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 439904649391295,
+											"disabled": true,
+											"parameters": {
+												"variable": "Barreiras",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 686184215745944,
+											"parameters": {
+												"object-to-create": "caixa_boss1",
+												"layer": "3",
+												"x": "305.020463",
+												"y": "29",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch1",
+											"sid": 905365360827689,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Barreira1",
+											"sid": 738843223249825,
+											"disabled": true,
+											"parameters": {
+												"x": "224"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Barreira2",
+											"sid": 840589627151251,
+											"disabled": true,
+											"parameters": {
+												"x": "448"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 906369290385928,
+											"disabled": true,
+											"parameters": {
+												"object-to-create": "Trava1",
+												"layer": "0",
+												"x": "320",
+												"y": "224",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 272197444922886,
+											"disabled": true,
+											"parameters": {
+												"seconds": "0.5",
+												"use-timescale": false
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Barreira1",
+											"sid": 627293427440729,
+											"disabled": true,
+											"parameters": {
+												"animation": "\"trava\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Barreira2",
+											"sid": 167850654192915,
+											"disabled": true,
+											"parameters": {
+												"animation": "\"trava\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 711470928501702
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "galoborg",
+											"sid": 746633112123071,
+											"parameters": {
+												"object": "Switch2"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 690302671018802,
+											"parameters": {
+												"variable": "Botoes",
+												"comparison": 0,
+												"value": "1"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 938142376418688,
+											"disabled": true,
+											"parameters": {
+												"variable": "Barreiras",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 316107121853832,
+											"parameters": {
+												"object-to-create": "caixa_boss2",
+												"layer": "3",
+												"x": "360.175112",
+												"y": "107",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch2",
+											"sid": 126887879240198,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Barreira3",
+											"sid": 742971061538955,
+											"disabled": true,
+											"parameters": {
+												"x": "224"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Barreira4",
+											"sid": 401290886439645,
+											"disabled": true,
+											"parameters": {
+												"x": "448"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 532639694116854,
+											"disabled": true,
+											"parameters": {
+												"object-to-create": "Trava2",
+												"layer": "0",
+												"x": "320",
+												"y": "192",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 136398710193929,
+											"disabled": true,
+											"parameters": {
+												"seconds": "0.5",
+												"use-timescale": false
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Barreira3",
+											"sid": 208849119592362,
+											"disabled": true,
+											"parameters": {
+												"animation": "\"trava\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Barreira4",
+											"sid": 602320659146118,
+											"disabled": true,
+											"parameters": {
+												"animation": "\"trava\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 643639662771528
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "galoborg",
+											"sid": 254389266324312,
+											"parameters": {
+												"object": "Switch3"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 803277698643639,
+											"parameters": {
+												"variable": "Botoes",
+												"comparison": 0,
+												"value": "1"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 809761503318427,
+											"disabled": true,
+											"parameters": {
+												"variable": "Barreiras",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 681870250675979,
+											"parameters": {
+												"object-to-create": "caixa_boss3",
+												"layer": "3",
+												"x": "308.910256",
+												"y": "-15.352197",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch3",
+											"sid": 323846877291921,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Barreira5",
+											"sid": 598150925562376,
+											"disabled": true,
+											"parameters": {
+												"x": "224"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Barreira6",
+											"sid": 939478225143663,
+											"disabled": true,
+											"parameters": {
+												"x": "448"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 180346461769006,
+											"disabled": true,
+											"parameters": {
+												"object-to-create": "Trava3",
+												"layer": "0",
+												"x": "320",
+												"y": "160",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 107790528997721,
+											"disabled": true,
+											"parameters": {
+												"seconds": "0.5",
+												"use-timescale": false
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Barreira5",
+											"sid": 371728422416792,
+											"disabled": true,
+											"parameters": {
+												"animation": "\"trava\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Barreira6",
+											"sid": 254623168523931,
+											"disabled": true,
+											"parameters": {
+												"animation": "\"trava\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 175406318602910
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-time",
+											"objectClass": "System",
+											"sid": 925864697236031,
+											"parameters": {
+												"comparison": 5,
+												"time-seconds": "10"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 408044619194433,
+											"parameters": {
+												"variable": "Botoes",
+												"value": "2"
+											}
+										}
+									],
+									"sid": 409793897432501
+								}
+							],
+							"sid": 602210312683435
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 409764963669968,
+							"parameters": {
+								"variable": "Botoes",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 985196806209619,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Botoes2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-time",
+											"objectClass": "System",
+											"sid": 691083709026999,
+											"parameters": {
+												"comparison": 0,
+												"time-seconds": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 516448695976732,
+											"disabled": true,
+											"parameters": {
+												"variable": "Barreiras",
+												"value": "2"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch4",
+											"sid": 932004384726523,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch5",
+											"sid": 278598276180240,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch6",
+											"sid": 664953031672601,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch1",
+											"sid": 575440101324133,
+											"disabled": true,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch2",
+											"sid": 493457619843116,
+											"disabled": true,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch3",
+											"sid": 542185428699454,
+											"disabled": true,
+											"parameters": {
+												"frame-number": "0"
+											}
+										}
+									],
+									"sid": 842775335762409
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "galoborg",
+											"sid": 894992070222413,
+											"parameters": {
+												"object": "Switch4"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 638173585918728,
+											"parameters": {
+												"variable": "Botoes",
+												"comparison": 0,
+												"value": "2"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 813767353462069,
+											"disabled": true,
+											"parameters": {
+												"variable": "Barreiras",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 703734384695272,
+											"parameters": {
+												"object-to-create": "caixa_boss4",
+												"layer": "3",
+												"x": "308.910256",
+												"y": "-15.352197",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch4",
+											"sid": 191962935513890,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Barreira1",
+											"sid": 827628573587324,
+											"disabled": true,
+											"parameters": {
+												"x": "128"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Barreira2",
+											"sid": 567274517796670,
+											"disabled": true,
+											"parameters": {
+												"x": "160"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 720901372761122,
+											"disabled": true,
+											"parameters": {
+												"object-to-create": "Trava1",
+												"layer": "0",
+												"x": "152",
+												"y": "144",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 561961278432567
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "galoborg",
+											"sid": 470629581309828,
+											"parameters": {
+												"object": "Switch5"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 999059826656335,
+											"parameters": {
+												"variable": "Botoes",
+												"comparison": 0,
+												"value": "2"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 198846784620061,
+											"disabled": true,
+											"parameters": {
+												"variable": "Barreiras",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 712101328630248,
+											"parameters": {
+												"object-to-create": "caixa_boss5",
+												"layer": "3",
+												"x": "308.910256",
+												"y": "-15.352197",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch5",
+											"sid": 511206344817504,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Barreira3",
+											"sid": 586082126739478,
+											"disabled": true,
+											"parameters": {
+												"x": "128"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Barreira4",
+											"sid": 189141169855124,
+											"disabled": true,
+											"parameters": {
+												"x": "160"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 822324606850662,
+											"disabled": true,
+											"parameters": {
+												"object-to-create": "Trava2",
+												"layer": "0",
+												"x": "152",
+												"y": "128",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 169523116586205
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "galoborg",
+											"sid": 416769699585837,
+											"parameters": {
+												"object": "Switch6"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 291832458518827,
+											"parameters": {
+												"variable": "Botoes",
+												"comparison": 0,
+												"value": "2"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 362120503813294,
+											"disabled": true,
+											"parameters": {
+												"variable": "Barreiras",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 652110570573397,
+											"parameters": {
+												"object-to-create": "caixa_boss6",
+												"layer": "3",
+												"x": "308.910256",
+												"y": "-15.352197",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Switch6",
+											"sid": 468461516429354,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Barreira5",
+											"sid": 416485137233585,
+											"disabled": true,
+											"parameters": {
+												"x": "128"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Barreira6",
+											"sid": 637113685360696,
+											"disabled": true,
+											"parameters": {
+												"x": "160"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 961768626743517,
+											"disabled": true,
+											"parameters": {
+												"object-to-create": "Trava3",
+												"layer": "0",
+												"x": "152",
+												"y": "112",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 569992820915924,
+											"parameters": {
+												"seconds": "15",
+												"use-timescale": false
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 956177712820737,
+											"disabled": true,
+											"parameters": {
+												"variable": "Botoes",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 687571206719022
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-time",
+											"objectClass": "System",
+											"sid": 718761903488443,
+											"parameters": {
+												"comparison": 5,
+												"time-seconds": "10"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 575914579211532,
+											"parameters": {
+												"variable": "Botoes",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 915458722885174
+								}
+							],
+							"sid": 779606597451176
+						}
+					]
+				}
+			],
+			"sid": 489490519454045
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "BossHP",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 969252340626205
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-animation",
+							"objectClass": "boss_hp",
+							"sid": 155470242874179
+						}
+					],
+					"sid": 886178676653545
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 290480703088681,
+							"parameters": {
+								"variable": "BossHP",
+								"comparison": 0,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "boss_hp",
+							"sid": 756766051182688,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 478071504416751
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 959810962876272,
+							"parameters": {
+								"variable": "BossHP",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "boss_hp",
+							"sid": 731529766004105,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 925523627830289
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 394659831083342,
+							"parameters": {
+								"variable": "BossHP",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "boss_hp",
+							"sid": 477291484055706,
+							"parameters": {
+								"frame-number": "2"
+							}
+						}
+					],
+					"sid": 125187032986344
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 753072501159325,
+							"parameters": {
+								"variable": "BossHP",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "boss_hp",
+							"sid": 254833458226071,
+							"parameters": {
+								"frame-number": "3"
+							}
+						}
+					],
+					"sid": 877515650048515
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 662982822314624,
+							"parameters": {
+								"variable": "BossHP",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "boss_hp",
+							"sid": 970023279479123,
+							"parameters": {
+								"frame-number": "4"
+							}
+						}
+					],
+					"sid": 948867480001869
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 615316757920225,
+							"parameters": {
+								"variable": "BossHP",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "boss_hp",
+							"sid": 777733894567038,
+							"parameters": {
+								"frame-number": "5"
+							}
+						}
+					],
+					"sid": 251557646442072
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 433492015184394,
+							"parameters": {
+								"variable": "BossHP",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "boss_hp",
+							"sid": 410896663915934,
+							"parameters": {
+								"frame-number": "6"
+							}
+						}
+					],
+					"sid": 284199359083274
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 992262072239628,
+							"parameters": {
+								"variable": "BossHP",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 779754620069241
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 953294146566797,
+							"parameters": {
+								"audio-file": "destruir_bossf",
+								"loop": "not-looping",
+								"volume": "10",
+								"stereo-pan": "0",
+								"tag-optional": "\"chefe\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Boss",
+							"sid": 645610518968067
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 789071705858724,
+							"parameters": {
+								"object-to-create": "boss_morte",
+								"layer": "\"chefe\"",
+								"x": "Boss1.ImagePointX(1)",
+								"y": "Boss1.ImagePointy(1)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 639396871837319,
+							"parameters": {
+								"seconds": "4",
+								"use-timescale": false
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Áudio",
+							"sid": 604057206132081,
+							"parameters": {
+								"tag": "\"chefe\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "boss_morte",
+							"sid": 766313285684909
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 956124553377477,
+							"parameters": {
+								"group-name": "\"Torreta\"",
+								"state": "deactivated"
+							}
+						}
+					],
+					"sid": 978856172609285
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 967927968320711
+						}
+					],
+					"actions": [],
+					"sid": 438743593886603
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "caixa_boss1",
+							"sid": 803980441571743,
+							"parameters": {
+								"object": "Boss"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "caixa_boss1",
+							"sid": 178609879847129,
+							"parameters": {
+								"animation": "\"Animação 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 298282792899625,
+							"parameters": {
+								"variable": "BossHP",
+								"value": "3"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 117582324246534,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "caixa_boss1",
+							"sid": 329750619353027
+						}
+					],
+					"sid": 165720618041257,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "caixa_boss1",
+							"sid": 129665285160235,
+							"parameters": {
+								"object": "Boss1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 362209058908201
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "caixa_boss1",
+							"sid": 609892513255425,
+							"parameters": {
+								"animation": "\"quebra\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 616456240573646,
+							"parameters": {
+								"variable": "BossHP",
+								"value": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 792226969466046,
+							"parameters": {
+								"seconds": "1",
+								"use-timescale": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "caixa_boss1",
+							"sid": 458647503542242
+						}
+					],
+					"sid": 670826246571364
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "caixa_boss2",
+							"sid": 514922615175259,
+							"parameters": {
+								"object": "Boss1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 904561603196132
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "caixa_boss2",
+							"sid": 760702428710428,
+							"parameters": {
+								"animation": "\"quebra\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 891831687268610,
+							"parameters": {
+								"variable": "BossHP",
+								"value": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 190019805075465,
+							"parameters": {
+								"seconds": "1",
+								"use-timescale": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "caixa_boss2",
+							"sid": 627249365537401
+						}
+					],
+					"sid": 232651148204480
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "caixa_boss3",
+							"sid": 758041280580433,
+							"parameters": {
+								"object": "Boss1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 636899118025237
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "caixa_boss3",
+							"sid": 930281910622997,
+							"parameters": {
+								"animation": "\"quebra\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 344531476204441,
+							"parameters": {
+								"variable": "BossHP",
+								"value": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 924838521833676,
+							"parameters": {
+								"seconds": "1",
+								"use-timescale": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "caixa_boss3",
+							"sid": 948628529453394
+						}
+					],
+					"sid": 657107690782312
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "caixa_boss4",
+							"sid": 216400532560586,
+							"parameters": {
+								"object": "Boss1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 796713220412486
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "caixa_boss4",
+							"sid": 784351245922768,
+							"parameters": {
+								"animation": "\"quebra\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 737900510387582,
+							"parameters": {
+								"variable": "BossHP",
+								"value": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 143340420296596,
+							"parameters": {
+								"seconds": "1",
+								"use-timescale": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "caixa_boss4",
+							"sid": 274561503702114
+						}
+					],
+					"sid": 682911130707967
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "caixa_boss5",
+							"sid": 764732546901974,
+							"parameters": {
+								"object": "Boss1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 192012549232883
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "caixa_boss5",
+							"sid": 562819074340303,
+							"parameters": {
+								"animation": "\"quebra\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 265797649445433,
+							"parameters": {
+								"variable": "BossHP",
+								"value": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 811821255955779,
+							"parameters": {
+								"seconds": "1",
+								"use-timescale": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "caixa_boss5",
+							"sid": 520197733117773
+						}
+					],
+					"sid": 296850667033829
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "caixa_boss6",
+							"sid": 527583791982289,
+							"parameters": {
+								"object": "Boss1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 105133347692397
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "caixa_boss6",
+							"sid": 863073543812401,
+							"parameters": {
+								"animation": "\"quebra\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 398131397591649,
+							"parameters": {
+								"variable": "BossHP",
+								"value": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 439847755160255,
+							"parameters": {
+								"seconds": "1",
+								"use-timescale": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "caixa_boss6",
+							"sid": 598026413591273
+						}
+					],
+					"sid": 123251287614067
+				}
+			],
+			"sid": 324113575301110
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "boss_morte",
+					"sid": 361917952858138
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 467076189165348,
+					"parameters": {
+						"variable": "Torretas",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Saida",
+					"sid": 102066829520692,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Saida",
+					"sid": 737891905751613,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 596479051105155
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "galoborg",
+					"sid": 858042561645334,
+					"parameters": {
+						"object": "Saida",
+						"offset-x": "0",
+						"offset-y": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 652232382743283,
+					"parameters": {
+						"layout": "Parabens"
+					}
+				}
+			],
+			"sid": 604570297170939
+		}
+	],
+	"sid": 235554497500143
+}

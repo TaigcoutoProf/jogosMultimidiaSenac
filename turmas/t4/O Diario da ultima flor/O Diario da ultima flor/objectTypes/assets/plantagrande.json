@@ -1,0 +1,54 @@
+{
+	"name": "plantagrande",
+	"plugin-id": "Sprite",
+	"sid": 206158193082276,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 35,
+						"height": 68,
+						"originX": 0.5428571428571428,
+						"originY": 0.47058823529411764,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 337008,
+						"collisionPoly": {
+							"points": [
+								0.44922619047619045,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 833842097687833,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

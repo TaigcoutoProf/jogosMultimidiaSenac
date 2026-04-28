@@ -1,0 +1,10 @@
+{
+	"name": "texto_pause",
+	"plugin-id": "Text",
+	"sid": 250121149950241,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
