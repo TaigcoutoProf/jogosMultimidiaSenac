@@ -1,0 +1,581 @@
+[
+  {
+    "id": "binx",
+    "titulo": "Binx",
+    "turma": "T3",
+    "ano": "2026",
+    "autores": [
+      "Turma T3"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Projeto jogavel desenvolvido na turma T3.",
+    "descricaoCompleta": "Jogo produzido como parte dos estudos de desenvolvimento multimidia, reunindo narrativa, interacao e publicacao web.",
+    "categoria": "Aventura",
+    "tags": [
+      "2D",
+      "Interativo",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t3/Banners/Icon_binx.png",
+    "linkJogo": "turmas/t3/Binx/index.html",
+    "destaque": true,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Projeto de turma"
+  },
+  {
+    "id": "zelador-vs-ninjas",
+    "titulo": "Zelador Vs Ninjas",
+    "turma": "T3",
+    "ano": "2026",
+    "autores": [
+      "Turma T3"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Projeto de acao criado pelos estudantes da turma T3.",
+    "descricaoCompleta": "Experiencia criada para explorar mecanicas de jogo, ritmo de desafio e apresentacao visual em ambiente web.",
+    "categoria": "Acao",
+    "tags": [
+      "2D",
+      "Acao",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t3/Banners/Icon_zelador.png",
+    "linkJogo": "turmas/t3/Zelador Vs Ninjas/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Projeto de turma"
+  },
+  {
+    "id": "pug",
+    "titulo": "Mike, o Pug",
+    "turma": "T3",
+    "ano": "2026",
+    "autores": [
+      "Turma T3"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Jogo da turma T3 com foco em interacao rapida.",
+    "descricaoCompleta": "Projeto estudantil publicado como parte da galeria Arcade Multimidia.",
+    "categoria": "Arcade",
+    "tags": [
+      "2D",
+      "Arcade",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t3/Banners/Icon_mike.png",
+    "linkJogo": "turmas/t3/pug/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Projeto de turma"
+  },
+  {
+    "id": "coracao-selvagem",
+    "titulo": "Coracao Selvagem",
+    "turma": "T4",
+    "ano": "2026",
+    "autores": [
+      "Turma T4"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Experiencia narrativa desenvolvida pela turma T4.",
+    "descricaoCompleta": "Projeto que combina ambientacao, progressao e interatividade para apresentar uma proposta autoral dos estudantes.",
+    "categoria": "Narrativo",
+    "tags": [
+      "Narrativa",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t4/Banners/Coração selvagem.png",
+    "linkJogo": "",
+    "destaque": true,
+    "status": "em-ajuste",
+    "observacoes": "A pagina antiga aponta para turmas/t4/jogo1/index.html, mas esse arquivo nao foi encontrado no repositorio.",
+    "tipoProjeto": "Projeto de turma"
+  },
+  {
+    "id": "galoborg",
+    "titulo": "Galoborg",
+    "turma": "T4",
+    "ano": "2026",
+    "autores": [
+      "Turma T4"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Jogo autoral da turma T4 para o acervo multimidia.",
+    "descricaoCompleta": "Projeto criado para demonstrar conceitos de desenvolvimento, identidade visual e publicacao de jogos em navegador.",
+    "categoria": "Arcade",
+    "tags": [
+      "Arcade",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t4/Banners/Galoborg Capa.png",
+    "linkJogo": "",
+    "destaque": false,
+    "status": "em-ajuste",
+    "observacoes": "A pagina antiga aponta para turmas/t4/jogo2/index.html, mas esse arquivo nao foi encontrado no repositorio.",
+    "tipoProjeto": "Projeto de turma"
+  },
+  {
+    "id": "o-diario-da-ultima-flor",
+    "titulo": "O Diario da Ultima Flor",
+    "turma": "T4",
+    "ano": "2026",
+    "autores": [
+      "Turma T4"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Projeto narrativo da turma T4.",
+    "descricaoCompleta": "Jogo publicado na galeria para valorizar processos de criacao, narrativa e interatividade.",
+    "categoria": "Narrativo",
+    "tags": [
+      "Narrativa",
+      "Exploracao",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "",
+    "linkJogo": "turmas/t4/O Diario da ultima flor/index.html",
+    "destaque": false,
+    "status": "rascunho",
+    "observacoes": "",
+    "tipoProjeto": "Projeto de turma"
+  },
+  {
+    "id": "ai-abandoned-inside",
+    "titulo": "A.I Abandoned Inside",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Jogo da turma T5 com atmosfera de investigacao.",
+    "descricaoCompleta": "Projeto desenvolvido para apresentar uma experiencia interativa com identidade propria e publicacao em navegador.",
+    "categoria": "Suspense",
+    "tags": [
+      "Exploracao",
+      "Narrativa",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t5/banners/AI.png",
+    "linkJogo": "turmas/t5/A.I Abandoned Inside/index.html",
+    "destaque": true,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  },
+  {
+    "id": "adventure-coelho",
+    "titulo": "Adventure Coelho",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Aventura criada por estudantes da turma T5.",
+    "descricaoCompleta": "Jogo estudantil com proposta de aventura, interacao e progressao publicado no acervo.",
+    "categoria": "Aventura",
+    "tags": [
+      "Aventura",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t5/banners/AdventureCoelho.png",
+    "linkJogo": "turmas/t5/Adventure Coelho/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  },
+  {
+    "id": "filtro-da-verdade",
+    "titulo": "Filtro da Verdade",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Projeto interativo da turma T5.",
+    "descricaoCompleta": "Experiencia criada para explorar escolhas, feedback visual e publicacao de jogo em ambiente web.",
+    "categoria": "Interativo",
+    "tags": [
+      "Escolhas",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t5/banners/Filtro da Verdade.png",
+    "linkJogo": "turmas/t5/Filtro da Verdade/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  },
+  {
+    "id": "fuga-porco",
+    "titulo": "Fuga Porco",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Jogo de desafio e movimento criado na turma T5.",
+    "descricaoCompleta": "Projeto publicado para demonstrar mecanicas de desafio, controles e apresentacao visual.",
+    "categoria": "Acao",
+    "tags": [
+      "Desafio",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t5/banners/Fuga Porco.png",
+    "linkJogo": "turmas/t5/Fuga Porco/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  },
+  {
+    "id": "jogo-do-ratao",
+    "titulo": "Jogo do Ratao",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Projeto arcade desenvolvido pela turma T5.",
+    "descricaoCompleta": "Jogo criado para a galeria com foco em interacao, ciclo de desafio e publicacao web.",
+    "categoria": "Arcade",
+    "tags": [
+      "Arcade",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t5/banners/Ratão.png",
+    "linkJogo": "turmas/t5/Jogo do Ratão/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  },
+  {
+    "id": "milka",
+    "titulo": "Milka",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Jogo autoral da turma T5.",
+    "descricaoCompleta": "Projeto estudantil publicado no Arcade Multimidia para acesso permanente.",
+    "categoria": "Aventura",
+    "tags": [
+      "Aventura",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t5/banners/Milka.png",
+    "linkJogo": "turmas/t5/Milka/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  },
+  {
+    "id": "mimi-berry-mouse",
+    "titulo": "Mimi: Berry Mouse",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Jogo da turma T5 com proposta de aventura leve.",
+    "descricaoCompleta": "Projeto criado para explorar visual, interacao e controles simples em uma experiencia web.",
+    "categoria": "Aventura",
+    "tags": [
+      "Aventura",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t5/banners/Mimi - Berry Mouse.png",
+    "linkJogo": "turmas/t5/Mimi - Berry Mouse/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  },
+  {
+    "id": "morpheus",
+    "titulo": "Morpheus",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Projeto de atmosfera e exploracao da turma T5.",
+    "descricaoCompleta": "Experiencia interativa desenvolvida para apresentar narrativa, identidade visual e navegacao jogavel.",
+    "categoria": "Exploracao",
+    "tags": [
+      "Exploracao",
+      "Narrativa",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t5/banners/Morpheus.png",
+    "linkJogo": "turmas/t5/Morpheus/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  },
+  {
+    "id": "patooo",
+    "titulo": "Patoo",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Jogo arcade produzido pela turma T5.",
+    "descricaoCompleta": "Projeto publicado como parte da vitrine de jogos do Tecnico em Multimidia.",
+    "categoria": "Arcade",
+    "tags": [
+      "Arcade",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t5/banners/Patoo.png",
+    "linkJogo": "turmas/t5/Patooo/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  },
+  {
+    "id": "zenos-adventure",
+    "titulo": "Zeno's Adventure",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Aventura jogavel criada na turma T5.",
+    "descricaoCompleta": "Projeto autoral desenvolvido pelos estudantes para exercitar construcao de jogo, interface e publicacao.",
+    "categoria": "Aventura",
+    "tags": [
+      "Aventura",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t5/banners/Zeno.jpg",
+    "linkJogo": "turmas/t5/Zeno's Adventure/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  },
+  {
+    "id": "script",
+    "titulo": "Script",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Projeto jogavel desenvolvido pela turma T5.",
+    "descricaoCompleta": "Jogo criado para compor o acervo de projetos do Tecnico em Multimidia.",
+    "categoria": "Interativo",
+    "tags": [
+      "Construct",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "Construct",
+      "HTML"
+    ],
+    "capa": "turmas/t5/banners/Script.jpg",
+    "linkJogo": "turmas/t5/Script/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  },
+  {
+    "id": "cat-noar",
+    "titulo": "Cat Noar",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Projeto jogavel da turma T5.",
+    "descricaoCompleta": "Jogo criado para compor o acervo de projetos do Tecnico em Multimidia.",
+    "categoria": "Arcade",
+    "tags": [
+      "Arcade",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t5/banners/Cat Noar.png",
+    "linkJogo": "turmas/t5/cat noar/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  },
+  {
+    "id": "jogo-do-castor",
+    "titulo": "Jogo do Castor",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Jogo estudantil desenvolvido na turma T5.",
+    "descricaoCompleta": "Projeto publicado para valorizar os processos de criacao e desenvolvimento dos estudantes.",
+    "categoria": "Arcade",
+    "tags": [
+      "Arcade",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t5/banners/jogoDoCastor.jpg",
+    "linkJogo": "turmas/t5/jogo do castor/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  },
+  {
+    "id": "sky-of-london",
+    "titulo": "Sky Of London",
+    "turma": "T5",
+    "ano": "2026",
+    "autores": [
+      "Turma T5"
+    ],
+    "docente": "Docente responsavel",
+    "descricaoCurta": "Jogo da turma T5 com ambientacao propria.",
+    "descricaoCompleta": "Projeto criado para exercitar desenvolvimento de jogos, composicao visual e publicacao em navegador.",
+    "categoria": "Aventura",
+    "tags": [
+      "Aventura",
+      "2D",
+      "Web"
+    ],
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "capa": "turmas/t5/banners/skyOfLondon.png",
+    "linkJogo": "turmas/t5/skyOfLondon/index.html",
+    "destaque": false,
+    "status": "publicado",
+    "observacoes": "",
+    "tipoProjeto": "Unitario"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "T3",
+    "nome": "Turma T3",
+    "temaTitulo": "Tema gerador a cadastrar",
+    "temaDescricao": "Adicione aqui uma descricao curta do tema gerador da turma.",
+    "descricao": "Jogos desenvolvidos durante a unidade curricular de desenvolvimento multimidia.",
+    "proposta": "Projetos organizados pela turma."
+  },
+  {
+    "id": "T4",
+    "nome": "Turma T4",
+    "temaTitulo": "Tema gerador a cadastrar",
+    "temaDescricao": "Adicione aqui uma descricao curta do tema gerador da turma.",
+    "descricao": "Jogos desenvolvidos durante a unidade curricular de desenvolvimento multimidia.",
+    "proposta": "Projetos organizados pela turma."
+  },
+  {
+    "id": "T5",
+    "nome": "Turma T5",
+    "temaTitulo": "Tema gerador do projeto final a cadastrar",
+    "temaDescricao": "Adicione aqui o texto do tema gerador usado no projeto final em equipe.",
+    "descricao": "A turma trabalhou com jogos unitarios, desenvolvidos individualmente, e tambem com uma proposta final em equipe orientada por tema gerador.",
+    "proposta": "Unitario + final em equipe"
+  }
+]
